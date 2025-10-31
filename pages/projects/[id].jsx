@@ -152,12 +152,36 @@ function ProjectSingle(props) {
   );
 }
 
-export async function getServerSideProps({ query, locale }) {
-  const { id } = query;
+export async function getStaticPaths({ locales }) {
+  const paths = [];
+
+  projectsData.forEach((project) => {
+    locales.forEach((locale) => {
+      paths.push({
+        params: { id: project.id.toString() },
+        locale,
+      });
+    });
+  });
+
+  return {
+    paths,
+    fallback: false,
+  };
+}
+
+export async function getStaticProps({ params, locale }) {
+  const { id } = params;
+  const project = projectsData.find((p) => p.id === parseInt(id));
+
+  if (!project) {
+    return { notFound: true };
+  }
+
   return {
     props: {
       ...(await serverSideTranslations(locale, ["common"])),
-      project: projectsData.filter((project) => project.id === parseInt(id))[0],
+      project,
     },
   };
 }
