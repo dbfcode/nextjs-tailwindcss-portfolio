@@ -33,9 +33,7 @@ function about() {
         animate={{ opacity: 1, delay: 1 }}
         exit={{ opacity: 0 }}
         className="container mx-auto"
-      >
-        <AboutClients />
-      </motion.div>
+      ></motion.div>
     </div>
   );
 }
