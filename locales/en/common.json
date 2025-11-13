@@ -1,0 +1,11 @@
+{
+  "site": { "title": "Portfolio" },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "cta": { "hireMe": "Hire me" },
+  "greeting": "Hi, I'm {{name}}"
+}

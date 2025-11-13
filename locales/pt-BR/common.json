@@ -1,0 +1,11 @@
+{
+  "site": { "title": "Portfólio" },
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "cta": { "hireMe": "Contrate-me" },
+  "greeting": "Olá, eu sou {{name}}"
+}
