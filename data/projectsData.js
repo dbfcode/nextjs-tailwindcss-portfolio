@@ -23,18 +23,18 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
-        title: "StreamHub - Home Page",
-        img: "/images/web-project-2.jpg",
-      },
-      {
-        id: uuidv4(),
         title: "StreamHub - Catálogo",
-        img: "/images/ui-project-1.jpg",
+        img: "/images/streamhub/desktop.png",
       },
       {
         id: uuidv4(),
-        title: "StreamHub - Mobile View",
-        img: "/images/mobile-project-2.jpg",
+        title: "StreamHub - Mobile",
+        img: "/images/streamhub/mobile.png",
+      },
+      {
+        id: uuidv4(),
+        title: "StreamHub - Tradução vindo desde o servidor (melhor SEO)",
+        img: "/images/streamhub/SSR_TRANSLATION.png",
       },
     ],
     ProjectInfo: {
@@ -316,7 +316,7 @@ export const projectsData = [
     title: "GitFind",
     url: "gitfind",
     category: "Web Application",
-    img: "/images/gitfind/home_after_search.png",
+    img: "/images/gitfind/gitfind_after_search.png",
     repositoryLink: "https://github.com/dig-ie/gitfind_after_search.png",
     ProjectHeader: {
       title: "GitFind",
@@ -399,6 +399,110 @@ export const projectsData = [
         },
       ],
       SocialSharingHeading: "Deploy",
+    },
+  },
+  {
+    id: 5,
+    title: "Portfólio Mobile First JavaScript, HTML e CSS",
+    url: "portfolio-mobile-first-javascript",
+    category: "Web Application",
+    img: "/images/trilha-js-portfolio/desktop.png",
+    repositoryLink: "https://github.com/dig-ie/trilha-js-portfolio",
+    ProjectHeader: {
+      title: "Portfólio Mobile First JavaScript",
+      publishDate: "2024",
+      tags: "HTML5 / CSS3 / JavaScript / Mobile First",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Portfólio - Tela Mobile",
+        img: "/images/trilha-js-portfolio/mobile.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Portfólio - Tela Mobile",
+        img: "/images/trilha-js-portfolio/mobile-open.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Portfólio - Tela Desktop",
+        img: "/images/trilha-js-portfolio/desktop.png",
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: "Sobre o Projeto",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: "Tipo",
+          details: "Portfólio Pessoal Mobile First",
+        },
+        {
+          id: uuidv4(),
+          title: "Stack Principal",
+          details: "HTML5, CSS3, JavaScript ES6+",
+        },
+        {
+          id: uuidv4(),
+          title: "Autor",
+          details: "Diêgo Ferreira",
+        },
+        {
+          id: uuidv4(),
+          title: "Deploy",
+          details: "GitHub Pages",
+        },
+      ],
+      ObjectivesHeading: "Objetivo",
+      ObjectivesDetails:
+        "Portfólio desenvolvido com abordagem Mobile First utilizando HTML, CSS e JavaScript puro. O conteúdo é parcialmente carregado a partir da API pública do GitHub e parcialmente de um arquivo local profile.json presente no repositório. O projeto foi criado como exercício de fundamentos de front-end, responsividade, manipulação de DOM e consumo de API REST.",
+      Technologies: [
+        {
+          title: "Tools & Technologies",
+          techs: [
+            "HTML5",
+            "CSS3",
+            "JavaScript ES6+",
+            "GitHub API",
+            "Fetch API",
+            "Responsividade Mobile First",
+            "DOM Manipulation",
+            "GitHub Pages",
+          ],
+        },
+      ],
+      ProjectDetailsHeading: "Funcionalidades e Detalhes Técnicos",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Layout Mobile First: Todo o design e estrutura da aplicação foi pensado para priorizar telas pequenas, garantindo fluidez e responsividade em dispositivos móveis antes da adaptação para telas maiores.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Consumo da API do GitHub: Informações como repositórios e detalhes públicos são carregados dinamicamente via Fetch API, exibindo dados reais do perfil do GitHub.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Integração com profile.json: Parte das informações pessoais e profissionais é carregada de um arquivo JSON local, demonstrando manipulação e integração de dados estáticos.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Estrutura Simples e Performática: Sem dependências, sem frameworks, totalmente construído com JavaScript puro, CSS modularizado e HTML semântico.",
+        },
+      ],
+      SocialSharingHeading: "Demonstração",
+      SocialSharing: [
+        {
+          id: uuidv4(),
+          name: "GitHub Pages",
+          url: "https://dig-ie.github.io/trilha-js-portfolio/",
+        },
+      ],
     },
   },
 ];
