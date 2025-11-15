@@ -114,7 +114,7 @@ export const projectsData = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Cadastro, Login e Página do Usuário - Aplicação React",
     url: "cadastro-login-pagina-usuario-aplicacao-react",
     category: "Web Application",
@@ -218,7 +218,7 @@ export const projectsData = [
     },
   },
   {
-    id: 4,
+    id: 3,
     title: "Mini ERP/CRM - PHP, MySQL, RabbitMQ, Asaas e Docker",
     url: "mini-erp-crm-php-mysql-rabbitmq-asaas",
     category: "Web Application / Full Stack",
@@ -335,7 +335,7 @@ export const projectsData = [
     },
   },
   {
-    id: 5,
+    id: 4,
     title: "GitFind - React ",
     url: "gitfind",
     category: "Web Application",
@@ -426,7 +426,7 @@ export const projectsData = [
     },
   },
   {
-    id: 6,
+    id: 5,
     title: "Pokédex com PokeAPI - Javascript, HTML e CSS",
     url: "pokedex-com-pokeapi",
     category: "Web Application",
@@ -527,9 +527,9 @@ export const projectsData = [
       SocialSharingHeading: "Deploy",
     },
   },
-  ,
+
   {
-    id: 7,
+    id: 6,
     title: "Portfólio Mobile First JavaScript, HTML e CSS",
     url: "portfolio-mobile-first-javascript",
     category: "Web Application",
