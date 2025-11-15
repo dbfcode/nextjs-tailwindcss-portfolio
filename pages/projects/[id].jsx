@@ -45,7 +45,7 @@ function ProjectSingle(props) {
       <div className="grid grid-cols-1 sm:grid-cols-3 sm:gap-10 mt-12">
         {props.project.ProjectImages.map((project) => {
           return (
-            <div className="mb-10 sm:mb-0" key={project.id}>
+            <div className="mb-10 sm:mb-0 flex items-center" key={project.id}>
               <Image
                 src={project.img}
                 className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
