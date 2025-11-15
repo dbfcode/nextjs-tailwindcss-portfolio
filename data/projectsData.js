@@ -222,6 +222,7 @@ export const projectsData = [
     img: "/images/react-auth-ui-firebase/react-auth-ui-firebase.png",
     repositoryLink:
       "https://github.com/dig-ie/react-registration-login-userHome-home",
+    projectLink: "https://react-registration-login-user-home-home.vercel.app/",
     ProjectHeader: {
       title: "Cadastro, Login e Página do Usuário - Aplicação React",
       publishDate: "2024",
@@ -323,7 +324,8 @@ export const projectsData = [
     url: "gitfind",
     category: "Web Application",
     img: "/images/gitfind/gitfind_after_search.png",
-    repositoryLink: "https://github.com/dig-ie/gitfind_after_search.png",
+    repositoryLink: "https://github.com/dig-ie/React-gitFind",
+    projectLink: "https://dig-ie.github.io/React-gitFind/",
     ProjectHeader: {
       title: "GitFind",
       publishDate: "2024",
@@ -414,6 +416,7 @@ export const projectsData = [
     category: "Web Application",
     img: "/images/trilha-js-portfolio/desktop.png",
     repositoryLink: "https://github.com/dig-ie/trilha-js-portfolio",
+    projectLink: "https://dig-ie.github.io/trilha-js-portfolio/",
     ProjectHeader: {
       title: "Portfólio Mobile First JavaScript",
       publishDate: "2024",

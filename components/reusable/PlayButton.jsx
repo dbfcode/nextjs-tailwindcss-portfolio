@@ -3,7 +3,7 @@
 import { Play } from "lucide-react";
 
 export function PlayButton({
-  label = "Confira o repositório de Código",
+  label = "Confira o projeto",
   onClick,
   className = "",
   icon = <Play size={18} />,
