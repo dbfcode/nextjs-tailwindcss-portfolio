@@ -4,17 +4,23 @@ import PagesMetaHead from "../../components/PagesMetaHead";
 import { projectsData } from "../../data/projectsData";
 import RelatedProjects from "../../components/projects/RelatedProjects";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-
+import { PlayButton } from "../../components/reusable/PlayButton";
+import { ScrollDownIndicator } from "../../components/reusable/ScrollDownIndicator";
 function ProjectSingle(props) {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto relative">
       <PagesMetaHead title={props.project.title} />
 
       {/* Header */}
       <div>
-        <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
-          {props.project.ProjectHeader.title}
-        </p>
+        <div className="flex justify-between">
+          <p className="font-general-medium text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-14 sm:mt-20 mb-7">
+            {props.project.ProjectHeader.title}
+          </p>
+          <ScrollDownIndicator />
+        </div>
+
+        <PlayButton onClick={null} />
         <div className="flex">
           <div className="flex items-center mr-10">
             <FiClock className="text-xl text-ternary-dark dark:text-ternary-light" />
