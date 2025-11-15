@@ -130,18 +130,18 @@ export const projectsData = [
     ProjectImages: [
       {
         id: uuidv4(),
+        title: "Página do Usuário",
+        img: "/images/react-auth-ui-firebase/homepage.png",
+      },
+      {
+        id: uuidv4(),
         title: "Página de Cadastro",
-        img: "/images/web-project-1.jpg",
+        img: "/images/react-auth-ui-firebase/user_created.jpg",
       },
       {
         id: uuidv4(),
         title: "Página de Login",
-        img: "/images/ui-project-1.jpg",
-      },
-      {
-        id: uuidv4(),
-        title: "Página do Usuário",
-        img: "/images/mobile-project-1.jpg",
+        img: "/images/react-auth-ui-firebase/logged_in_page.png",
       },
     ],
     ProjectInfo: {
