@@ -45,7 +45,7 @@ function ProjectsGrid() {
                         mb-3
                         "
         >
-          Search projects by title or filter by category
+          Principais projetos. Filtre por categoria:
         </h3>
         <div
           className="
@@ -57,7 +57,8 @@ function ProjectsGrid() {
                         gap-3
                         "
         >
-          <div className="flex justify-between gap-2">
+          {/* search bar */}
+          {/* <div className="flex justify-between gap-2">
             <span
               className="
                                 hidden
@@ -100,7 +101,7 @@ function ProjectsGrid() {
               placeholder="Search Projects"
               aria-label="Name"
             />
-          </div>
+          </div> */}
 
           <ProjectsFilter setSelectProject={setSelectProject} />
         </div>
