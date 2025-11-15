@@ -235,7 +235,7 @@ export const projectsData = [
       {
         id: uuidv4(),
         title: "Dashboard ERP",
-        img: "/images/mini-erp-php/erp_dashboard.png",
+        img: "/images/PHP_CRM_ERP/dashboard.png",
       },
       {
         id: uuidv4(),

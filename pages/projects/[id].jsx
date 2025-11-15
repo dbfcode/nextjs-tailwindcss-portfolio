@@ -21,17 +21,19 @@ function ProjectSingle(props) {
 
           <ScrollDownIndicator />
         </div>
-        <div className="my-5">
-          <PlayButton
-            onClick={() => {
-              window.open(
-                props.project.projectLink,
-                "_blank",
-                "noopener,noreferrer"
-              );
-            }}
-          />
-        </div>
+        {props.project.projectLink && (
+          <div className="my-5">
+            <PlayButton
+              onClick={() => {
+                window.open(
+                  props.project.projectLink,
+                  "_blank",
+                  "noopener,noreferrer"
+                );
+              }}
+            />
+          </div>
+        )}
 
         <div className="flex">
           <div className="flex items-center mr-10">
