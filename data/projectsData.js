@@ -7,9 +7,128 @@ import { v4 as uuidv4 } from "uuid";
 //   FiYoutube,
 // } from "react-icons/fi";
 
-export const projectsData = [
+const rawProjects = [
   {
-    id: 1,
+    title:
+      "Autenticação com Cookies HttpOnly – Next.js + React + Atomic Design",
+    url: "autenticacao-nextjs-react-cookie-httponly",
+    category: "Web Application / Frontend + API",
+    img: "/images/login-desktop.png",
+    projectLink: "https://login-cadastro-react-next-atomic.vercel.app/",
+    repositoryLink:
+      "https://github.com/dig-ie/Login-Cadastro-React-Next-Atomic",
+    ProjectHeader: {
+      title: "Autenticação com Cookies HttpOnly – React/Next + NestJS",
+      publishDate: "2025",
+      tags: "Next.js / React / NestJS / JWT / Cookies HttpOnly / Atomic Design",
+    },
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Tela de Login (Mobile)",
+        img: "/images/solo-login/login-mobile.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Tela de Login (Desktop)",
+        img: "/images/solo-login/login-desktop.png",
+      },
+    ],
+    ProjectInfo: {
+      ClientHeading: "Sobre o Projeto",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: "Tipo",
+          details: "Módulo de Autenticação com Cookies HttpOnly",
+        },
+        {
+          id: uuidv4(),
+          title: "Stack Principal",
+          details: "Next.js, React, NestJS, PostgreSQL, JWT Cookies",
+        },
+        {
+          id: uuidv4(),
+          title: "Autor",
+          details: "Diêgo Ferreira",
+        },
+        {
+          id: uuidv4(),
+          title: "Padrão de UI",
+          details: "Atomic Design (Atoms → Molecules → Organisms)",
+        },
+      ],
+
+      ObjectivesHeading: "Objetivo",
+      ObjectivesDetails:
+        "Criar um módulo completo de autenticação com React/Next no Client-Side, consumindo o módulo de autenticação da API que construí em NestJS e utilizando JWT em Cookies HttpOnly para segurança real contra XSS. O foco é demonstrar domínio de componentização (Atomic Design), arquitetura limpa, formulários controlados, integração com backend real e preparo para futuras migrações para SSR/Server Actions.",
+
+      Technologies: [
+        {
+          title: "Tools & Technologies",
+          techs: [
+            "Next.js 15",
+            "React 19",
+            "TypeScript",
+            "NestJS",
+            "JWT",
+            "Cookies HttpOnly",
+            "PostgreSQL",
+            "Prisma ORM",
+            "Tailwind CSS 4",
+            "Atomic Design",
+            "Zod/React Hook Form",
+            "Axios/Fetch",
+          ],
+        },
+      ],
+
+      ProjectDetailsHeading: "Arquitetura, Segurança e Componentização",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Autenticação com Cookies HttpOnly: o login envia email e senha para a API NestJS, que devolve um JWT dentro de um cookie HttpOnly, Secure e SameSite. O cookie não pode ser acessado via JavaScript, protegendo o usuário contra ataques XSS.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Client-Side Architecture: toda lógica de autenticação acontece em Organisms (fluxo, requisições, estados), deixando a UI limpa nas Molecules e Atoms. Nenhum token é salvo em localStorage ou sessionStorage.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Preparado para SSR/Server Actions: a arquitetura permite migração futura para Server Actions sem reescrever UI, apenas movendo a lógica de autenticação do Organism para a camada de servidor.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Design System baseado em Atomic Design: formulários, inputs, labels, botões e superfícies construídos como Atoms e Molecules reutilizáveis, permitindo rápida evolução do fluxo (login, recovery, reset).",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Integração real com API: login, refresh, validações e retorno estruturado seguindo melhores práticas REST, com estados loading/error e fallback UI.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Segurança aprimorada: JWT somente no cookie HttpOnly, prevenção contra XSS, maior compatibilidade com SSR, e base estruturada para implementar rotas protegidas server-side futuramente.",
+        },
+      ],
+
+      SocialSharingHeading: "Repositório",
+      SocialSharing: [
+        {
+          id: uuidv4(),
+          name: "GitHub",
+          url: "https://github.com/dig-ie/Login-Cadastro-React-Next-Atomic",
+        },
+      ],
+    },
+  },
+
+  {
     title: "Homepage, Idiomas, SEO SSR/SSG - React/Next.js",
     url: "streamhub-plataforma-streaming",
     category: "Web Application",
@@ -114,7 +233,6 @@ export const projectsData = [
   },
 
   {
-    id: 2,
     title: "Cadastro, Login e Página do Usuário - Aplicação React",
     url: "cadastro-login-pagina-usuario-aplicacao-react",
     category: "Web Application",
@@ -218,7 +336,6 @@ export const projectsData = [
     },
   },
   {
-    id: 3,
     title: "Mini ERP/CRM - PHP, MySQL, RabbitMQ, Asaas e Docker",
     url: "mini-erp-crm-php-mysql-rabbitmq-asaas",
     category: "Web Application / Full Stack",
@@ -341,7 +458,6 @@ export const projectsData = [
     },
   },
   {
-    id: 4,
     title: "GitFind - React ",
     url: "gitfind",
     category: "Web Application",
@@ -432,7 +548,6 @@ export const projectsData = [
     },
   },
   {
-    id: 5,
     title: "Pokédex com PokeAPI - Javascript, HTML e CSS",
     url: "pokedex-com-pokeapi",
     category: "Web Application",
@@ -535,7 +650,6 @@ export const projectsData = [
   },
 
   {
-    id: 6,
     title: "Portfólio Mobile First JavaScript, HTML e CSS",
     url: "portfolio-mobile-first-javascript",
     category: "Web Application",
@@ -640,3 +754,8 @@ export const projectsData = [
     },
   },
 ];
+
+export const projectsData = rawProjects.map((proj, index) => ({
+  id: index + 1,
+  ...proj,
+}));
