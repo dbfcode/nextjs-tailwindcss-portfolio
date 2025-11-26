@@ -14,8 +14,7 @@ const rawProjects = [
     category: "Backend / APIs REST / DevOps",
     img: "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png",
     // projectLink: "https://github.com/dig-ie/bolsa-api-nes",
-    repositoryLink:
-      "https://github.com/dig-ie/bolsa-Next.js-React.js-front-end",
+    repositoryLink: "https://github.com/dig-ie/bolsa-Node.js-NestJS-back-end",
 
     ProjectHeader: {
       title:
