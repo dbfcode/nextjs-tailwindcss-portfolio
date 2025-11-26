@@ -10,6 +10,159 @@ import { v4 as uuidv4 } from "uuid";
 const rawProjects = [
   {
     title:
+      "Bolsa API — Arquitetura Monolítica Modular com NestJS, Prisma, PostgreSQL e Docker",
+    url: "bolsa-api-nest-arquitetura-modular",
+    category: "Backend / APIs REST / DevOps",
+    img: "/images/bolsa-api/overview.png",
+    // projectLink: "https://github.com/dig-ie/bolsa-api-nes",
+    repositoryLink:
+      "https://github.com/dig-ie/bolsa-Next.js-React.js-front-end",
+
+    ProjectHeader: {
+      title:
+        "Bolsa API — Arquitetura Modulada com NestJS, Prisma, Docker e PostgreSQL",
+      publishDate: "2025",
+      tags: "NestJS / Node.js / Prisma ORM / PostgreSQL / Docker / Autenticação JWT / Arquitetura Modular / DevOps",
+    },
+
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Containers rodando no Docker Desktop",
+        img: "/images/NESTJS_API_AUTH_DOCKER_PRISMA/containers_docker.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Swagger UI — Documentação da API",
+        img: "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png",
+      },
+      {
+        id: uuidv4(),
+        title:
+          "Banco de dados PostgreSQL rodando em container Docker, visualizado via DBeaver (SGBD)",
+        img: "/images/NESTJS_API_AUTH_DOCKER_PRISMA/dbeaver_banco.png",
+      },
+      {
+        id: uuidv4(),
+        title:
+          "Prisma Studio — Gráfico de bootstrap da api + banco + prisma studio via script.sh que inicializa ambiente dockerizado",
+        img: "/images/NESTJS_API_AUTH_DOCKER_PRISMA/mermaid_graph.jpg",
+      },
+    ],
+
+    ProjectInfo: {
+      ClientHeading: "Sobre o Projeto",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: "Tipo",
+          details:
+            "API Backend REST para Simulador de Bolsa de Valores (Valorim)",
+        },
+        {
+          id: uuidv4(),
+          title: "Arquitetura",
+          details:
+            "Monolito Modular — módulos independentes e organizados por domínio",
+        },
+        {
+          id: uuidv4(),
+          title: "Banco de Dados",
+          details: "PostgreSQL + Prisma ORM com Migrations e Seeds automáticos",
+        },
+        {
+          id: uuidv4(),
+          title: "Setup Dev",
+          details:
+            "Docker Compose para Dev e Prod + Scripts .sh/.bat para automação",
+        },
+        {
+          id: uuidv4(),
+          title: "Autor",
+          details: "Diêgo Ferreira",
+        },
+      ],
+
+      ObjectivesHeading: "Propósito e Objetivo",
+      ObjectivesDetails:
+        "Construir uma API modular, escalável e completamente dockerizada para um simulador educacional de operações na bolsa de valores. O foco do projeto inclui autenticação robusta com JWT via Cookies HttpOnly, documentação via Swagger, módulos independentes (users, auth, assets, orders, wallet, simulation), migrations e seeds automatizados via Prisma, e um ciclo de desenvolvimento altamente otimizado com Docker, garantindo que novos membros do time possam iniciar o ambiente com apenas um comando.",
+
+      Technologies: [
+        {
+          title: "Tools & Technologies",
+          techs: [
+            "NestJS 11",
+            "Node.js 20",
+            "TypeScript",
+            "Prisma ORM",
+            "PostgreSQL",
+            "JWT com Cookies HttpOnly",
+            "Docker & Docker Compose",
+            "Swagger OpenAPI 3",
+            "bcryptjs",
+            "Class Validator",
+            "Arquitetura Modular",
+          ],
+        },
+      ],
+
+      ProjectDetailsHeading:
+        "Arquitetura, Autenticação e Ciclo de Desenvolvimento",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "Autenticação avançada com JWT via Cookies HttpOnly: login envia o token em cookie httpOnly, Secure e SameSite, prevenindo XSS e mantendo o front-end mais seguro e compatível com SSR.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Módulos de Users e Auth completamente implementados — incluindo decorators personalizados, guards (JwtAuth + Roles), CurrentUser, documentação com Swagger e responses totalmente tipadas.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Arquitetura modular escalável: cada domínio (users, assets, orders, wallet, simulation) possui seu próprio controller, service e regras de negócio, dentro de um único monólito organizado.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Setup de desenvolvimento profissional com Docker Compose: containers orquestrados (API, PostgreSQL, Prisma Studio), hot reload, healthchecks e volume para sincronização de código sem conflito.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Scripts .sh/.bat inteligentes para Windows, Linux e Mac: criam .env automaticamente, rodam compose, aplicam migrations, executam seeds e validam o estado dos serviços.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Prisma ORM com migrations, seeds e geração automática do client — garantindo consistência total entre ambiente local, staging e produção.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Documentação completa com Swagger, incluindo respostas 200/400/401/403/404, exemplos detalhados e rotas separadas por módulo.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Ciclo de Dev otimizado: rodar `./setup-dev.sh` ou `setup-dev.bat` inicia todo o ambiente com um clique — ideal para times iniciantes ou onboarding rápido.",
+        },
+      ],
+
+      SocialSharingHeading: "Repositório",
+      SocialSharing: [
+        {
+          id: uuidv4(),
+          name: "GitHub",
+          url: "https://github.com/dig-ie/bolsa-api-nest",
+        },
+      ],
+    },
+  },
+  {
+    title:
       "Autenticação com Cookies HttpOnly – Next.js + React + Atomic Design",
     url: "autenticacao-nextjs-react-cookie-httponly",
     category: "Web Application / Frontend + API",
