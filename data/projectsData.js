@@ -284,8 +284,7 @@ const rawProjects = [
     img: "/images/streamhub/streamhub-portfolio.png",
     projectLink:
       "https://streamhub-reactjs-nextjs-plataform-1ve71j6xo-dig-ies-projects.vercel.app/",
-    repositoryLink:
-      "https://github.com/dig-ie/streamhub-REACTJS-NEXTJS-plataform",
+
     ProjectHeader: {
       title: "StreamHub - Plataforma de Streaming",
       publishDate: "Dez 2024",

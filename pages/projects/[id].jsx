@@ -101,19 +101,21 @@ function ProjectSingle(props) {
                 );
               })}
             </ul>
-            <div className="my-2">
-              <PlayButton
-                label="Confira o repositório de código"
-                icon={<Code size={18} />}
-                onClick={() => {
-                  window.open(
-                    props.project.repositoryLink,
-                    "_blank",
-                    "noopener,noreferrer"
-                  );
-                }}
-              />
-            </div>
+            {props.project.repositoryLink && (
+              <div className="my-2">
+                <PlayButton
+                  label="Confira o repositório de código"
+                  icon={<Code size={18} />}
+                  onClick={() => {
+                    window.open(
+                      props.project.repositoryLink,
+                      "_blank",
+                      "noopener,noreferrer"
+                    );
+                  }}
+                />
+              </div>
+            )}
           </div>
 
           {/* Single project objectives */}
