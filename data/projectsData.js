@@ -87,7 +87,7 @@ const rawProjects = [
 
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "NestJS 11",
             "Node.js 20",
@@ -120,7 +120,7 @@ const rawProjects = [
         {
           id: uuidv4(),
           details:
-            "Arquitetura modular escalável: cada domínio (users, assets, orders, wallet, simulation) possui seu próprio controller, service e regras de negócio, dentro de um único monólito organizado.",
+            "Arquitetura modular escalável: cada domínio (users, auth...) possui seu próprio controller, service e regras de negócio, dentro de um único monólito organizado.",
         },
         {
           id: uuidv4(),
@@ -149,7 +149,6 @@ const rawProjects = [
         },
       ],
 
-      SocialSharingHeading: "Repositório",
       SocialSharing: [
         {
           id: uuidv4(),
@@ -216,7 +215,7 @@ const rawProjects = [
 
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "Next.js 15",
             "React 19",
@@ -268,7 +267,6 @@ const rawProjects = [
         },
       ],
 
-      SocialSharingHeading: "Repositório",
       SocialSharing: [
         {
           id: uuidv4(),
@@ -339,7 +337,7 @@ const rawProjects = [
         "Aplicação moderna de streaming de filmes e séries desenvolvida com Next.js 15, React 19 e TypeScript, demonstrando proficiência em arquitetura escalável, performance otimizada e Design System consistente. O projeto foi desenvolvido como demonstração técnica para demonstrar habilidades em desenvolvimento front-end moderno.",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "Next.js 15.3",
             "React 19",
@@ -442,7 +440,7 @@ const rawProjects = [
         "Fluxo completo de autenticação de usuários utilizando React, Firebase Auth, React Router Dom e Styled Components, com base em um protótipo visual do Figma da DIO. A aplicação implementa formulários, validações e navegação utilizando react-hook-form para controle de formulários, yup para validação dos dados, react-router-dom para rotas, firebase para autenticação na nuvem e styled-components para estilização baseada no protótipo Figma.",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "React",
             "Firebase Auth",
@@ -551,7 +549,7 @@ const rawProjects = [
         "Projeto educacional demonstrando a construção de um Mini ERP/CRM completo usando PHP 8 sem framework, com autenticação por sessão, CRUD de clientes e pedidos, geração de cobranças via Asaas (PIX/Boleto/Cartão), publicação de eventos no RabbitMQ e worker consumidor para orquestração assíncrona. Arquitetura em camadas com MVC enxuto e containers Docker para ambiente completo.",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "PHP 8.2 (Apache)",
             "MySQL 8",
@@ -661,7 +659,7 @@ const rawProjects = [
         "Projeto desenvolvido intencionalmente com padrões antigos do React (Era CRA – 2016 ~ 2021), explorando práticas e estruturas hoje consideradas datadas, mas que marcaram a evolução do ecossistema. O objetivo foi entender como eram organizadas aplicações React nas primeiras gerações, especialmente durante a era do Create React App (CRA), comparando com os patterns modernos (Next.js, Vite, Hooks, CSS Modules, Tailwind etc.).",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "React 17",
             "Create React App (CRA)",
@@ -758,7 +756,7 @@ const rawProjects = [
         "Uma Pokédex interativa que consome dados da PokeAPI, exibindo informações de diversos Pokémon em tempo real com sistema de busca flexível e otimizado. Projeto desenvolvido como prática de front-end vanilla focado em consumo de API REST pública, manipulação assíncrona de dados e otimizações de performance.",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "HTML5",
             "CSS3",
@@ -858,7 +856,7 @@ const rawProjects = [
         "Portfólio desenvolvido com abordagem Mobile First utilizando HTML, CSS e JavaScript puro. O conteúdo é parcialmente carregado a partir da API pública do GitHub e parcialmente de um arquivo local profile.json presente no repositório. O projeto foi criado como exercício de fundamentos de front-end, responsividade, manipulação de DOM e consumo de API REST.",
       Technologies: [
         {
-          title: "Tools & Technologies",
+          title: "Ferramentas & Tecnologias",
           techs: [
             "HTML5",
             "CSS3",
