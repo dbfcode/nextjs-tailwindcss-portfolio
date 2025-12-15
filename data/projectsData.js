@@ -901,6 +901,117 @@ const rawProjects = [
       ],
     },
   },
+  {
+    title: "CRUD de Anotações no Console — Linguagem C",
+    url: "crud-console-linguagem-c",
+    category: "Programação Estruturada / Console Application",
+    img: "/images/linguagem_c/linguagem_c_crud_console.png",
+    // projectLink: "",
+    // repositoryLink: "",
+
+    ProjectHeader: {
+      title: "CRUD de Anotações no Console em Linguagem C",
+      publishDate: "1º período da faculdade",
+      tags: "C / CRUD / Console / Lógica de Programação / Projeto Acadêmico",
+    },
+
+    ProjectImages: [
+      {
+        id: uuidv4(),
+        title: "Menu principal do CRUD no console",
+        img: "/images/linguagem_c/linguagem_c_crud_console.png",
+      },
+      {
+        id: uuidv4(),
+        title: "Criação e listagem de anotações no console",
+        img: "/images/linguagem_c/crud_linguagem_c_console.png",
+      },
+    ],
+
+    ProjectInfo: {
+      ClientHeading: "Sobre o Projeto",
+      CompanyInfo: [
+        {
+          id: uuidv4(),
+          title: "Tipo",
+          details: "Aplicação CRUD em Console",
+        },
+        {
+          id: uuidv4(),
+          title: "Linguagem",
+          details: "Linguagem C",
+        },
+        {
+          id: uuidv4(),
+          title: "Contexto",
+          details: "Projeto acadêmico — avaliação final da disciplina",
+        },
+        {
+          id: uuidv4(),
+          title: "IDE",
+          details: "Replit",
+        },
+        {
+          id: uuidv4(),
+          title: "Autor",
+          details: "Diêgo Ferreira",
+        },
+      ],
+
+      ObjectivesHeading: "Objetivo",
+      ObjectivesDetails:
+        "Desenvolver um CRUD em Linguagem C executado no console, com foco em consolidar uma base sólida de programação ao final do 1º período da disciplina de CODING. O projeto reforça a compreensão da sintaxe da linguagem C, lógica e raciocínio algorítmico, programação procedural/estruturada, estruturas de dados básicas (como struct e vetores) e controle de fluxo, servindo como alicerce para estudos posteriores em algoritmos, estruturas de dados mais avançadas e sistemas de baixo nível.",
+
+      Technologies: [
+        {
+          title: "Ferramentas & Tecnologias",
+          techs: [
+            "Linguagem C",
+            "Programação Estruturada",
+            "Entrada e Saída no Console",
+            "Replit IDE",
+          ],
+        },
+      ],
+
+      ProjectDetailsHeading: "Funcionalidades e Conceitos Aplicados",
+      ProjectDetails: [
+        {
+          id: uuidv4(),
+          details:
+            "CRUD completo no console, implementado integralmente em Linguagem C, contemplando criação, listagem, edição e remoção de anotações por meio de um menu interativo, reforçando fundamentos clássicos de aplicações baseadas em fluxo.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Fluxo sequencial e determinístico: o usuário seleciona a operação desejada, informa o título da anotação e em seguida sua descrição, exercitando leitura de entrada, validação básica e controle preciso da execução.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Aplicação intensiva de lógica de programação, utilizando estruturas de controle como if/else, switch e laços de repetição (for, while), fortalecendo o raciocínio algorítmico e a tomada de decisão.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Manipulação direta de estruturas (struct) e vetores para armazenamento temporário das anotações em memória, consolidando conceitos fundamentais de estruturas de dados e organização de registros.",
+        },
+        {
+          id: uuidv4(),
+          details:
+            "Projeto desenvolvido com foco em programação procedural/estruturada em C, clareza de código e separação lógica em funções, servindo como base sólida para estudos futuros em algoritmos, estruturas de dados e sistemas de mais baixo nível.",
+        },
+      ],
+
+      SocialSharing: [
+        {
+          id: uuidv4(),
+          name: "GitHub",
+          url: "",
+        },
+      ],
+    },
+  },
 ];
 
 export const projectsData = rawProjects.map((proj, index) => ({
