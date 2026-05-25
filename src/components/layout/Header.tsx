@@ -5,11 +5,13 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { site } from "@/lib/portfolio";
+import { useSoundInteraction } from "@/hooks/useSoundInteraction";
 import { cn } from "@/lib/utils";
 
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
+  const { soundProps, playClick } = useSoundInteraction();
 
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/5 glass">
@@ -17,6 +19,7 @@ export function Header() {
         <Link
           href="/"
           className="text-lg font-semibold tracking-tight gradient-text"
+          {...soundProps}
         >
           DF
         </Link>
@@ -32,6 +35,7 @@ export function Header() {
                   ? "bg-white/10 text-foreground"
                   : "text-muted hover:text-foreground",
               )}
+              {...soundProps}
             >
               {item.label}
             </Link>
@@ -41,6 +45,7 @@ export function Header() {
         <Link
           href="/contact"
           className="hidden rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 px-4 py-2 text-sm font-medium text-white md:inline-flex"
+          {...soundProps}
         >
           Contrate-me
         </Link>
@@ -48,7 +53,11 @@ export function Header() {
         <button
           type="button"
           className="md:hidden text-foreground"
-          onClick={() => setOpen(!open)}
+          onClick={() => {
+            playClick();
+            setOpen(!open);
+          }}
+          onMouseEnter={soundProps.onMouseEnter}
           aria-label="Menu"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
@@ -61,7 +70,12 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                soundProps.onClick();
+                setOpen(false);
+              }}
+              onMouseEnter={soundProps.onMouseEnter}
+              onFocus={soundProps.onFocus}
               className={cn(
                 "block rounded-lg px-4 py-3 text-sm",
                 pathname === item.href

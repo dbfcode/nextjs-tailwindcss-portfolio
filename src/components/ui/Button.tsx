@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useSoundInteraction } from "@/hooks/useSoundInteraction";
 import { cn } from "@/lib/utils";
 
 type ButtonProps = {
@@ -26,11 +29,18 @@ export function Button({
   children,
   external,
 }: ButtonProps) {
+  const { soundProps } = useSoundInteraction();
+
   const classes = cn(
     "inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-medium transition-all duration-300",
     variants[variant],
     className,
   );
+
+  const handleClick = () => {
+    soundProps.onClick();
+    onClick?.();
+  };
 
   if (href) {
     if (external) {
@@ -40,20 +50,35 @@ export function Button({
           target="_blank"
           rel="noopener noreferrer"
           className={classes}
+          onMouseEnter={soundProps.onMouseEnter}
+          onFocus={soundProps.onFocus}
+          onClick={soundProps.onClick}
         >
           {children}
         </a>
       );
     }
     return (
-      <Link href={href} className={classes}>
+      <Link
+        href={href}
+        className={classes}
+        onMouseEnter={soundProps.onMouseEnter}
+        onFocus={soundProps.onFocus}
+        onClick={soundProps.onClick}
+      >
         {children}
       </Link>
     );
   }
 
   return (
-    <button type="button" onClick={onClick} className={classes}>
+    <button
+      type="button"
+      onClick={handleClick}
+      onMouseEnter={soundProps.onMouseEnter}
+      onFocus={soundProps.onFocus}
+      className={classes}
+    >
       {children}
     </button>
   );

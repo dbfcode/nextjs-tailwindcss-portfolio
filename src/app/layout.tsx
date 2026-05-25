@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { AppProviders } from "@/components/providers/AppProviders";
 import { site } from "@/lib/portfolio";
 import "./globals.css";
 
@@ -34,11 +35,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} mesh-bg min-h-screen antialiased`}
       >
-        <Header />
-        <main className="mx-auto max-w-6xl px-4 pb-20 pt-24 sm:px-6">
-          {children}
-        </main>
-        <Footer />
+        <AppProviders>
+          <Header />
+          <main className="mx-auto max-w-6xl px-4 pb-20 pt-24 sm:px-6">
+            {children}
+          </main>
+          <Footer />
+        </AppProviders>
       </body>
     </html>
   );

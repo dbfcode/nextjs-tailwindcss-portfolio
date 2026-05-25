@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { useSoundInteraction } from "@/hooks/useSoundInteraction";
 import type { Project } from "@/types/portfolio";
 
 type ProjectCardProps = {
@@ -12,6 +13,8 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
+  const { soundProps } = useSoundInteraction();
+
   return (
     <motion.article
       initial={{ opacity: 0, y: 20 }}
@@ -22,6 +25,9 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
       <Link
         href={`/projects/${project.slug}`}
         className="group glass block overflow-hidden rounded-2xl transition-all duration-300 hover:border-violet-500/30 hover:shadow-xl hover:shadow-violet-500/10"
+        onMouseEnter={soundProps.onMouseEnter}
+        onFocus={soundProps.onFocus}
+        onClick={soundProps.onClick}
       >
         <div className="relative aspect-video overflow-hidden">
           <Image
