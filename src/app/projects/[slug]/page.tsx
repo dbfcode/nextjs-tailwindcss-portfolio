@@ -9,6 +9,7 @@ import {
   getRelatedProjects,
 } from "@/lib/portfolio";
 import { ProjectCard } from "@/components/projects/ProjectCard";
+import { ProjectDemoVideo } from "@/components/projects/ProjectDemoVideo";
 import { Button } from "@/components/ui/Button";
 
 type PageProps = {
@@ -81,6 +82,8 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           )}
         </div>
       </header>
+
+      {project.video && <ProjectDemoVideo video={project.video} />}
 
       <div className="mb-14 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {project.ProjectImages.map((image) => (

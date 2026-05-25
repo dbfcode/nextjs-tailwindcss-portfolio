@@ -43,9 +43,16 @@ export function ProjectCard({ project, index = 0 }: ProjectCardProps) {
           </span>
         </div>
         <div className="p-5">
-          <p className="text-xs font-medium uppercase tracking-wider text-cyan-400">
-            {project.category}
-          </p>
+          <div className="flex flex-wrap items-center gap-2">
+            <p className="text-xs font-medium uppercase tracking-wider text-cyan-400">
+              {project.category}
+            </p>
+            {project.video && (
+              <span className="rounded-full bg-violet-500/20 px-2 py-0.5 text-[10px] font-medium text-violet-300">
+                Com vídeo
+              </span>
+            )}
+          </div>
           <h3 className="mt-2 text-lg font-semibold leading-snug group-hover:text-violet-300 transition-colors">
             {project.title}
           </h3>
