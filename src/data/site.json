@@ -1,0 +1,12 @@
+{
+  "title": "Diêgo Ferreira — Portfólio",
+  "description": "Portfólio de Diêgo Ferreira — Desenvolvedor Full Stack especializado em React, Next.js, NestJS e PostgreSQL.",
+  "author": "Diêgo Ferreira",
+  "url": "https://diegoferreira.dev",
+  "nav": [
+    { "href": "/", "label": "Início" },
+    { "href": "/about", "label": "Sobre" },
+    { "href": "/projects", "label": "Projetos" },
+    { "href": "/contact", "label": "Contato" }
+  ]
+}
