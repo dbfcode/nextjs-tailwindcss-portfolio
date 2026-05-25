@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-background: #050508;
+  --color-surface: #0c0c12;
+  --color-surface-elevated: #12121c;
+  --color-border: #1e1e2e;
+  --color-muted: #8b8ba3;
+  --color-foreground: #f4f4f8;
+  --color-accent: #7c3aed;
+  --color-accent-light: #a78bfa;
+  --color-cyan: #22d3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  color: white;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #a78bfa 0%, #22d3ee 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass {
+  background: color-mix(in srgb, var(--color-surface-elevated) 70%, transparent);
+  backdrop-filter: blur(16px);
+  border: 1px solid color-mix(in srgb, white 8%, transparent);
+}
+
+.mesh-bg {
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in srgb, #7c3aed 25%, transparent), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, color-mix(in srgb, #22d3ee 12%, transparent), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 100%, color-mix(in srgb, #f472b6 8%, transparent), transparent);
+}

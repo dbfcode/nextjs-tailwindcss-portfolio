@@ -1,0 +1,12 @@
+{
+  "name": "Diêgo Ferreira",
+  "role": "Desenvolvedor Full Stack",
+  "tagline": "Desenvolvedor full stack apaixonado por tecnologia — React, Next.js, NestJS e PostgreSQL.",
+  "location": "Recife (RMR), PE, Brazil",
+  "email": "contato.diegoferreira.dev@gmail.com",
+  "phone": "55 81 98360-3171 (WhatsApp)",
+  "github": "https://github.com/dbfcode",
+  "linkedin": "https://www.linkedin.com/in/dbfcode",
+  "resumePath": "/files/DIÊGO_CURRICULUM.pdf",
+  "avatar": "/images/profile.jpeg"
+}

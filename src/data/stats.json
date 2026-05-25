@@ -1,0 +1,6 @@
+[
+  { "id": "experience", "label": "Anos de experiência", "value": 2, "suffix": "" },
+  { "id": "github", "label": "Stars no GitHub", "value": 20, "suffix": "+" },
+  { "id": "feedback", "label": "Feedback positivo", "value": 92, "suffix": "%" },
+  { "id": "projects", "label": "Projetos concluídos", "value": 77, "suffix": "%" }
+]
