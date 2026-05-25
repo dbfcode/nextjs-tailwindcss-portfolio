@@ -17,6 +17,13 @@ export interface ProjectImage {
   img: string;
 }
 
+export interface ProjectVideo {
+  src: string;
+  webm?: string;
+  poster: string;
+  title: string;
+}
+
 export interface ProjectHeader {
   title: string;
   publishDate: string;
@@ -60,6 +67,7 @@ export interface Project {
   img: string;
   projectLink?: string | null;
   repositoryLink?: string;
+  video?: ProjectVideo;
   ProjectHeader: ProjectHeader;
   ProjectImages: ProjectImage[];
   ProjectInfo: ProjectInfo;

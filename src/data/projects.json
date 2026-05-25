@@ -329,6 +329,12 @@
           "details": "Arquitetura: Implementação da nova arquitetura App Router do Next.js 15, type safety completo com TypeScript em toda aplicação, data fetching otimizado com React Query e cache inteligente, integração robusta com API OMDB incluindo tratamento completo de erros. O projeto segue boas práticas como Clean Code, princípios SOLID, componentização estratégica, hooks customizados reutilizáveis, error boundaries e performance monitoring ready."
         }
       ]
+    },
+    "video": {
+      "src": "/videos/streamhub-demo.mp4",
+      "webm": "/videos/streamhub-demo.webm",
+      "poster": "/images/streamhub/streamhub-portfolio.png",
+      "title": "StreamHub em execução — demonstração da plataforma"
     }
   },
   {
