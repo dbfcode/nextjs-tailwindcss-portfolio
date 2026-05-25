@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useSoundInteraction } from "@/hooks/useSoundInteraction";
 import type { Project } from "@/types/portfolio";
 import { ProjectCard } from "./ProjectCard";
 import { cn } from "@/lib/utils";
@@ -10,6 +11,8 @@ type ProjectsFilterProps = {
 };
 
 export function ProjectsFilter({ projects }: ProjectsFilterProps) {
+  const { playHover, playClick } = useSoundInteraction();
+
   const categories = useMemo(() => {
     const unique = [...new Set(projects.map((p) => p.category))];
     return ["Todos", ...unique];
@@ -29,7 +32,12 @@ export function ProjectsFilter({ projects }: ProjectsFilterProps) {
           <button
             key={cat}
             type="button"
-            onClick={() => setActive(cat)}
+            onClick={() => {
+              playClick();
+              setActive(cat);
+            }}
+            onMouseEnter={playHover}
+            onFocus={playHover}
             className={cn(
               "rounded-full px-4 py-2 text-sm font-medium transition-all",
               active === cat
