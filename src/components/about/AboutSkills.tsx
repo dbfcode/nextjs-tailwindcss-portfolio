@@ -31,8 +31,8 @@ export function AboutSkills() {
           Principais <span className="gradient-text">competências</span>
         </h2>
         <p className="mt-2 text-sm text-muted">
-          Java Spring Boot Developer · APIs REST · microsserviços · mobile web ·
-          cloud
+          Especialista Java · Spring Boot · Backend · APIs REST · microsserviços
+          · mobile full stack
         </p>
         <div className="mt-6">
           <TagList items={skills.competencies} />

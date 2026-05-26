@@ -1,18 +1,18 @@
 [
   {
     "id": "bio-1",
-    "bio": "Engenheiro de Software focado em sistemas escaláveis, aplicações web modernas e arquitetura de soluções digitais orientadas a resultados, com forte interesse em automação, integração de sistemas e uso eficiente de Inteligência Artificial para geração de valor real."
+    "bio": "Engenheiro de Software e Especialista Java, focado em backend com Spring Boot, APIs REST, microsserviços e arquitetura de sistemas escaláveis orientados a resultados de negócio."
   },
   {
     "id": "bio-2",
-    "bio": "Desenvolvedor Full Stack com experiência prática em Java, Spring Boot, Node.js, TypeScript, JavaScript, React, Next.js, PostgreSQL, APIs REST, Cloud, Docker e soluções com IA, entregando produtos prontos para produção com foco em performance, confiabilidade e manutenção sustentável."
+    "bio": "Desenvolvedor Backend e Full Stack com entrega ponta a ponta: Java, Spring Boot, Node.js/NestJS, PostgreSQL, SQL, Cloud, Docker, CI/CD, AWS, TDD e soluções com IA — do desenho da API e modelagem de dados ao deploy e evolução em produção."
   },
   {
     "id": "bio-3",
-    "bio": "Atuei em startups e ambientes dinâmicos, participando de decisões de arquitetura, desenvolvimento back-end, entregas full stack, automações e evolução de produtos digitais."
+    "bio": "Atuação em startups e iGaming com decisões de arquitetura, microsserviços, integrações, backoffice, automações e produtos mobile web full stack — sempre com prioridade em confiabilidade, performance e manutenção sustentável do backend."
   },
   {
     "id": "bio-4",
-    "bio": "Meu perfil combina profundidade técnica em backend, capacidade de execução full stack e mentalidade de dono, permitindo atuar desde a modelagem da solução até deploy e evolução contínua em produção."
+    "bio": "Perfil que combina profundidade em backend Java/Spring Boot, execução full stack mobile/web e mentalidade de dono: da modelagem e contratos de API à observabilidade, testes e operação contínua em ambiente cloud."
   }
 ]
