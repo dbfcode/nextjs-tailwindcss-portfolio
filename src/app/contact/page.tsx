@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Github, Globe, Linkedin, Mail, MapPin, Phone } from "lucide-react";
-import { profile, site } from "@/lib/portfolio";
+import { GITHUB_USERNAME, profile, site } from "@/lib/portfolio";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
@@ -28,7 +28,11 @@ export default function ContactPage() {
       label: "Portfólio",
       href: profile.portfolio ?? site.url,
     },
-    { icon: Github, label: "github.com/dbfcode", href: profile.github },
+    {
+      icon: Github,
+      label: `github.com/${GITHUB_USERNAME}`,
+      href: profile.github,
+    },
   ];
 
   return (

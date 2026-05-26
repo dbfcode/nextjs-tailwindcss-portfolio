@@ -6,7 +6,6 @@
     "url": "bolsa-api-nest-arquitetura-modular",
     "category": "Backend · Java/Spring patterns · APIs REST · Microsserviços",
     "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png",
-    "repositoryLink": "https://github.com/dbfcode/bolsa-Node.js-NestJS-back-end",
     "ProjectHeader": {
       "title": "Bolsa API — Arquitetura Modulada com NestJS, Prisma, Docker e PostgreSQL",
       "publishDate": "2025",
@@ -124,10 +123,11 @@
         {
           "id": "item-18",
           "name": "GitHub",
-          "url": "https://github.com/dbfcode/bolsa-api-nest"
+          "githubRepo": "bolsa-api-nest"
         }
       ]
-    }
+    },
+    "repositoryRepo": "bolsa-Node.js-NestJS-back-end"
   },
   {
     "id": 2,
@@ -137,7 +137,6 @@
     "category": "Backend · API REST · Full Stack · Segurança",
     "img": "/images/solo-login/login-desktop.png",
     "projectLink": "https://login-cadastro-react-next-atomic.vercel.app/",
-    "repositoryLink": "https://github.com/dbfcode/Login-Cadastro-React-Next-Atomic",
     "ProjectHeader": {
       "title": "Autenticação com Cookies HttpOnly – React/Next + NestJS",
       "publishDate": "2025",
@@ -230,10 +229,11 @@
         {
           "id": "item-31",
           "name": "GitHub",
-          "url": "https://github.com/dbfcode/Login-Cadastro-React-Next-Atomic"
+          "githubRepo": "Login-Cadastro-React-Next-Atomic"
         }
       ]
-    }
+    },
+    "repositoryRepo": "Login-Cadastro-React-Next-Atomic"
   },
   {
     "id": 3,
@@ -343,7 +343,6 @@
     "url": "cadastro-login-pagina-usuario-aplicacao-react",
     "category": "Full Stack · Autenticação · Mobile Web",
     "img": "/images/react-auth-ui-firebase/react-auth-ui-firebase.png",
-    "repositoryLink": "https://github.com/dbfcode/react-registration-login-userHome-home",
     "projectLink": "https://react-registration-login-user-home-home.vercel.app/",
     "ProjectHeader": {
       "title": "Cadastro, Login e Página do Usuário - Aplicação React",
@@ -428,7 +427,8 @@
         }
       ],
       "SocialSharingHeading": "Deploy"
-    }
+    },
+    "repositoryRepo": "react-registration-login-userHome-home"
   },
   {
     "id": 5,
@@ -437,7 +437,6 @@
     "url": "mini-erp-crm-php-mysql-rabbitmq-asaas",
     "category": "Backend · APIs REST · Microsserviços · Full Stack",
     "img": "/images/PHP_CRM_ERP/dashboard.png",
-    "repositoryLink": "https://github.com/dbfcode/PHP-Mini-ERP-CRM-8-Apache-MySQL-RabbitMQ",
     "projectLink": null,
     "ProjectHeader": {
       "title": "Mini ERP/CRM em PHP 8 + MySQL + RabbitMQ + Asaas",
@@ -536,10 +535,11 @@
         {
           "id": "item-69",
           "name": "Repositório no GitHub",
-          "url": "https://github.com/dbfcode/mini-erp-crm-php-mysql-rabbitmq-asaas"
+          "githubRepo": "mini-erp-crm-php-mysql-rabbitmq-asaas"
         }
       ]
-    }
+    },
+    "repositoryRepo": "PHP-Mini-ERP-CRM-8-Apache-MySQL-RabbitMQ"
   },
   {
     "id": 6,
@@ -548,8 +548,6 @@
     "url": "gitfind",
     "category": "Backend · API REST · Integração",
     "img": "/images/gitfind/gitfind_after_search.png",
-    "repositoryLink": "https://github.com/dbfcode/React-gitFind",
-    "projectLink": "https://dbfcode.github.io/React-gitFind/",
     "ProjectHeader": {
       "title": "GitFind",
       "publishDate": "2024",
@@ -624,7 +622,9 @@
         }
       ],
       "SocialSharingHeading": "Deploy"
-    }
+    },
+    "repositoryRepo": "React-gitFind",
+    "githubPagesRepo": "React-gitFind"
   },
   {
     "id": 7,
@@ -633,8 +633,6 @@
     "url": "pokedex-com-pokeapi",
     "category": "Backend patterns · API REST · Mobile Web",
     "img": "/images/pokedex.png",
-    "repositoryLink": "https://github.com/dbfcode/pokedex-JAVASCRIPT-CSS-HTML-API-pokemon",
-    "projectLink": "https://dbfcode.github.io/pokedex-JAVASCRIPT-CSS-HTML-API-pokemon/",
     "ProjectHeader": {
       "title": "Pokédex com PokeAPI",
       "publishDate": "Jan 2024",
@@ -715,7 +713,9 @@
         }
       ],
       "SocialSharingHeading": "Deploy"
-    }
+    },
+    "repositoryRepo": "pokedex-JAVASCRIPT-CSS-HTML-API-pokemon",
+    "githubPagesRepo": "pokedex-JAVASCRIPT-CSS-HTML-API-pokemon"
   },
   {
     "id": 8,
@@ -724,8 +724,6 @@
     "url": "portfolio-mobile-first-javascript",
     "category": "Mobile Full Stack · API REST",
     "img": "/images/trilha-js-portfolio/desktop.png",
-    "repositoryLink": "https://github.com/dbfcode/trilha-js-portfolio",
-    "projectLink": "https://dbfcode.github.io/trilha-js-portfolio/",
     "ProjectHeader": {
       "title": "Portfólio Mobile First JavaScript",
       "publishDate": "2024",
@@ -809,10 +807,12 @@
         {
           "id": "item-102",
           "name": "GitHub Pages",
-          "url": "https://dbfcode.github.io/trilha-js-portfolio/"
+          "githubPagesRepo": "trilha-js-portfolio"
         }
       ]
-    }
+    },
+    "repositoryRepo": "trilha-js-portfolio",
+    "githubPagesRepo": "trilha-js-portfolio"
   },
   {
     "id": 9,
