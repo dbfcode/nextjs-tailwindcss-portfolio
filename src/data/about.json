@@ -1,18 +1,18 @@
 [
   {
     "id": "bio-1",
-    "bio": "Sou Desenvolvedor Full Stack com foco em JavaScript/TypeScript, atuando principalmente com React, Next.js, Node.js, NestJS e PostgreSQL na construção de aplicações web e mobile de alta performance."
+    "bio": "Engenheiro de Software focado em sistemas escaláveis, aplicações web modernas e arquitetura de soluções digitais orientadas a resultados, com forte interesse em automação, integração de sistemas e uso eficiente de Inteligência Artificial para geração de valor real."
   },
   {
     "id": "bio-2",
-    "bio": "No front-end, desenvolvo interfaces dinâmicas, responsivas, acessíveis e mobile-first, aplicando Atomic Design, SSR/SSG/ISR, otimização para Core Web Vitals e SEO técnico quando necessário, em parceria com times de Produto e UX."
+    "bio": "Desenvolvedor Full Stack com experiência prática em Java, Spring Boot, Node.js, TypeScript, JavaScript, React, Next.js, PostgreSQL, APIs REST, Cloud, Docker e soluções com IA, entregando produtos prontos para produção com foco em performance, confiabilidade e manutenção sustentável."
   },
   {
     "id": "bio-3",
-    "bio": "No back-end, atuo com Node.js, NestJS e PostgreSQL na construção de APIs REST, microsserviços e integrações, além de automações e pipelines que sustentam aplicações completas e robustas, com CI/CD, Docker, testes automatizados e internacionalização (Crowdin + i18n)."
+    "bio": "Atuei em startups e ambientes dinâmicos, participando de decisões de arquitetura, desenvolvimento back-end, entregas full stack, automações e evolução de produtos digitais."
   },
   {
     "id": "bio-4",
-    "bio": "Também desenvolvo soluções de automação com LLMs (OpenAI), incluindo atendimento integrado ao WhatsApp e processamento inteligente de dados para ganho de eficiência operacional, sempre seguindo Clean Architecture, SOLID, code reviews e boas práticas de engenharia de software."
+    "bio": "Meu perfil combina profundidade técnica em backend, capacidade de execução full stack e mentalidade de dono, permitindo atuar desde a modelagem da solução até deploy e evolução contínua em produção."
   }
 ]
