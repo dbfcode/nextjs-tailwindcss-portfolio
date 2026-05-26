@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { profile } from "@/lib/portfolio";
 import { Button } from "@/components/ui/Button";
 
@@ -29,9 +29,8 @@ export function Hero() {
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
           <Button href="/projects">Ver projetos</Button>
-          <Button href={profile.resumePath} variant="secondary" external>
-            <Download size={18} />
-            Baixar currículo
+          <Button href="/about" variant="secondary">
+            Sobre mim
           </Button>
         </div>
       </motion.div>
