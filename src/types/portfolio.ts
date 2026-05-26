@@ -36,7 +36,12 @@ export interface ProjectDetail {
 export interface SocialLink {
   id: string;
   name: string;
-  url: string;
+  /** URL externa (não-GitHub). */
+  url?: string;
+  /** Nome do repositório — monta `github.com/{username}/{repo}`. */
+  githubRepo?: string;
+  /** Nome do repo no GitHub Pages — monta `{username}.github.io/{repo}`. */
+  githubPagesRepo?: string;
 }
 
 export interface ProjectInfo {
@@ -59,7 +64,12 @@ export interface Project {
   category: string;
   img: string;
   projectLink?: string | null;
+  /** Preenchido em runtime a partir de `repositoryRepo` + `githubUsername`. */
   repositoryLink?: string;
+  /** Somente nome do repositório (dados em JSON). */
+  repositoryRepo?: string;
+  /** Demo em GitHub Pages — somente nome do repo. */
+  githubPagesRepo?: string;
   video?: ProjectVideo;
   ProjectHeader: ProjectHeader;
   ProjectImages: ProjectImage[];
@@ -85,6 +95,9 @@ export interface Profile {
   email: string;
   phone: string;
   phoneWhatsApp?: string;
+  /** Username único — altere aqui ao mudar de conta no GitHub. */
+  githubUsername: string;
+  /** URL do perfil (derivada em runtime). */
   github: string;
   linkedin: string;
   portfolio?: string;
