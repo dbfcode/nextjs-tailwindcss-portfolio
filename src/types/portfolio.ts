@@ -88,7 +88,6 @@ export interface Profile {
   github: string;
   linkedin: string;
   portfolio?: string;
-  resumePath: string;
   avatar: string;
   languages?: Language[];
 }
