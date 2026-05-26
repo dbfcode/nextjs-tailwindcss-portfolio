@@ -1,0 +1,26 @@
+[
+  {
+    "id": "senac",
+    "institution": "Centro Universitário Senac",
+    "course": "Superior em Análise e Desenvolvimento de Sistemas",
+    "period": "mar 2022 — dez 2024"
+  },
+  {
+    "id": "porto-digital",
+    "institution": "Porto Digital — Embarque Digital",
+    "course": "Technological Residency Program · Tecnologia da Informação",
+    "period": "mai 2022 — jul 2024"
+  },
+  {
+    "id": "dio-java",
+    "institution": "DIO",
+    "course": "Bootcamp CI&T — Backend com Java & AWS",
+    "period": "dez 2025 — fev 2026"
+  },
+  {
+    "id": "etepjm",
+    "institution": "ETEPJM",
+    "course": "Técnico em Redes de Computadores",
+    "period": "mar 2015 — dez 2017"
+  }
+]

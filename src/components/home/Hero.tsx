@@ -16,12 +16,15 @@ export function Hero() {
         className="flex-1 text-center lg:text-left"
       >
         <p className="mb-4 text-sm font-medium uppercase tracking-widest text-cyan-400">
-          Olá, eu sou
+          Java Spring Boot Developer · API REST · Microsserviços
         </p>
         <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
           <span className="gradient-text">{profile.name.toUpperCase()}</span>
         </h1>
-        <p className="mt-6 max-w-xl text-lg text-muted sm:text-xl">
+        <p className="mt-3 text-base font-medium text-violet-300 sm:text-lg">
+          {profile.role}
+        </p>
+        <p className="mt-4 max-w-xl text-lg text-muted sm:text-xl">
           {profile.tagline}
         </p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
@@ -42,7 +45,7 @@ export function Hero() {
         <div className="relative mx-auto aspect-square w-64 max-w-sm overflow-hidden rounded-3xl border border-white/10 shadow-2xl shadow-violet-500/20 sm:w-80 lg:w-96">
           <Image
             src={profile.avatar}
-            alt={profile.name}
+            alt={`${profile.name} — Desenvolvedor Java Spring Boot, APIs REST e mobile web`}
             fill
             className="object-cover"
             priority

@@ -5,9 +5,11 @@ import { notFound } from "next/navigation";
 import { Calendar, ExternalLink, Github, Tag } from "lucide-react";
 import {
   getAllProjectSlugs,
+  site,
   getProjectBySlug,
   getRelatedProjects,
 } from "@/lib/portfolio";
+
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { ProjectDemoVideo } from "@/components/projects/ProjectDemoVideo";
 import { Button } from "@/components/ui/Button";
@@ -27,8 +29,9 @@ export async function generateMetadata({
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Projeto não encontrado" };
   return {
-    title: project.ProjectHeader.title,
+    title: `${project.ProjectHeader.title} | API REST · Java · Full Stack`,
     description: project.ProjectInfo.ObjectivesDetails.slice(0, 160),
+    keywords: site.keywords,
   };
 }
 
