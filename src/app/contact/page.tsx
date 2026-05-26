@@ -1,23 +1,36 @@
 import type { Metadata } from "next";
-import { Mail, MapPin, Phone } from "lucide-react";
-import { profile } from "@/lib/portfolio";
+import { Github, Globe, Linkedin, Mail, MapPin, Phone } from "lucide-react";
+import { profile, site } from "@/lib/portfolio";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Contato",
+  title: "Contato | Java Spring Boot Developer · Recife, Brasil",
+  description: `Contato com ${profile.name} — Desenvolvedor Full Stack, Java, Spring Boot, APIs REST e microsserviços. ${profile.location}.`,
+  keywords: site.keywords,
 };
 
-const contacts = [
-  { icon: MapPin, label: profile.location },
-  { icon: Mail, label: profile.email, href: `mailto:${profile.email}` },
-  {
-    icon: Phone,
-    label: profile.phone,
-    href: `https://wa.me/5581983603171`,
-  },
-];
-
 export default function ContactPage() {
+  const whatsapp = profile.phoneWhatsApp
+    ? `https://wa.me/${profile.phoneWhatsApp}`
+    : undefined;
+
+  const contacts = [
+    { icon: MapPin, label: profile.location },
+    { icon: Mail, label: profile.email, href: `mailto:${profile.email}` },
+    { icon: Phone, label: profile.phone, href: whatsapp },
+    {
+      icon: Linkedin,
+      label: "linkedin.com/in/diegodbf",
+      href: profile.linkedin,
+    },
+    {
+      icon: Globe,
+      label: "Portfólio (Vercel)",
+      href: profile.portfolio ?? site.url,
+    },
+    { icon: Github, label: "github.com/dbfcode", href: profile.github },
+  ];
+
   return (
     <div className="py-8">
       <div className="mx-auto max-w-2xl text-center">
@@ -25,7 +38,12 @@ export default function ContactPage() {
           Entre em <span className="gradient-text">contato</span>
         </h1>
         <p className="mt-4 text-muted">
-          Disponível para oportunidades, freelas e conversas sobre tecnologia.
+          Disponível para oportunidades como{" "}
+          <strong className="font-medium text-foreground">
+            Java Spring Boot Developer
+          </strong>
+          , backend, APIs REST, microsserviços, full stack e mobile web — Remoto
+          ou híbrido.
         </p>
       </div>
 
@@ -62,9 +80,11 @@ export default function ContactPage() {
 
       <div className="mt-14 flex flex-wrap justify-center gap-4">
         <Button href={`mailto:${profile.email}`}>Enviar e-mail</Button>
-        <Button href={profile.github} variant="secondary" external>
-          GitHub
-        </Button>
+        {whatsapp && (
+          <Button href={whatsapp} variant="secondary" external>
+            WhatsApp
+          </Button>
+        )}
         <Button href={profile.linkedin} variant="secondary" external>
           LinkedIn
         </Button>

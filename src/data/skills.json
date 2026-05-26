@@ -1,18 +1,22 @@
 {
   "competencies": [
-    "Desenvolvedor Backend Java / Spring Boot / Node.js",
+    "Desenvolvedor Backend Java / Spring Boot / Node.js / NestJS",
     "APIs REST / Microsserviços / Integrações",
-    "PostgreSQL / SQL / Modelagem de Dados",
-    "Cloud / Docker / Deploy / Ambientes escaláveis",
-    "React / Next.js / TypeScript / JavaScript / ECMAScript",
-    "IA aplicada / OpenAI APIs / Automação / Inteligência artificial",
-    "Performance / Escalabilidade / Boas práticas",
-    "Clean Code / Código sustentável",
-    "Visão de produto / Entrega rápida com qualidade",
-    "iGaming",
-    "Desenvolvimento ágil / Metodologias ágeis"
+    "PostgreSQL / SQL / Modelagem de Dados / MongoDB / Redis",
+    "Cloud / AWS / Docker / Kubernetes / CI/CD / Deploy",
+    "React / Next.js / TypeScript / JavaScript / Mobile Web",
+    "C# / ASP.NET / .NET (backoffice e APIs)",
+    "IA aplicada / OpenAI APIs / Automação / Chatbots",
+    "TDD / Jest / Testes unitários e de integração",
+    "Performance / SEO técnico / Core Web Vitals / Escalabilidade",
+    "Clean Code / Código sustentável / Arquitetura modular",
+    "iGaming / Alta demanda / Retenção e conversão",
+    "Scrum / Kanban / Metodologias ágeis"
   ],
-  "deliverables": [
+  "softSkills": [
+    "Capacidade de autogestão",
+    "Pensamento crítico",
+    "Equipes multidisciplinares",
     "Boa comunicação",
     "Ótima organização",
     "Trabalho em equipe",
@@ -22,12 +26,28 @@
     "Engenharia orientada ao negócio",
     "Colaboração remota eficiente"
   ],
+  "deliverables": [
+    "APIs REST e microsserviços prontos para produção",
+    "Migração React → Next.js (SSR/SSG) com ganho de performance e SEO",
+    "Integrações seguras (auth, sessão, webhooks, filas)",
+    "Pipelines CI/CD e qualidade com TDD",
+    "Automação com IA (OpenAI, WhatsApp Business API)",
+    "Backoffice e sistemas administrativos escaláveis"
+  ],
   "roles": [
     "Engenharia de Software",
+    "Java Spring Boot Developer",
     "Desenvolvedor Back-end",
     "Full Stack Engineer",
+    "Mobile Web Developer",
+    "API REST & Microsserviços",
     "Produtos com IA",
-    "Desenvolvedor Java",
-    "Plataformas / APIs / Sistemas escaláveis"
+    "Plataformas escaláveis / iGaming"
+  ],
+  "certifications": [
+    "SCRUM FOUNDATION PROFESSIONAL CERTIFICATE (SFPC)",
+    "Formação JavaScript Developer (39h)",
+    "Formação React Developer (34h)",
+    "Bootcamp CI&T — Backend com Java & AWS (DIO)"
   ]
 }

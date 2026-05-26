@@ -1,12 +1,19 @@
 {
-  "name": "Diêgo Ferreira",
-  "role": "Engenheiro de Software · Full Stack",
-  "tagline": "Sistemas escaláveis, aplicações web modernas e soluções digitais com IA — do backend Java/Spring e Node.js ao React/Next.js em produção.",
-  "location": "Recife (RMR), PE, Brazil",
+  "name": "Diego Ferreira",
+  "role": "Desenvolvedor Full Stack | Java | Spring Boot | IA aplicada",
+  "headline": "TypeScript · Backend · Microsserviços & APIs REST · Cloud · Docker · CI/CD · AWS · TDD · iGaming",
+  "tagline": "Engenheiro de Software — Java Spring Boot, APIs REST, microsserviços e aplicações web/mobile em produção, com IA aplicada e foco em performance, SEO e escalabilidade.",
+  "location": "Recife, Pernambuco, Brasil",
   "email": "contato.diegoferreira.dev@gmail.com",
-  "phone": "55 81 98360-3171 (WhatsApp)",
+  "phone": "(81) 9 8853-2136",
+  "phoneWhatsApp": "5581988532136",
   "github": "https://github.com/dbfcode",
-  "linkedin": "https://www.linkedin.com/in/dbfcode",
+  "linkedin": "https://www.linkedin.com/in/diegodbf",
+  "portfolio": "https://nextjs-tailwindcss-portfoliophi.vercel.app",
   "resumePath": "/files/DIÊGO_CURRICULUM.pdf",
-  "avatar": "/images/profile.jpeg"
+  "avatar": "/images/profile.jpeg",
+  "languages": [
+    { "name": "Português", "level": "Nativo" },
+    { "name": "Inglês", "level": "Professional Working" }
+  ]
 }

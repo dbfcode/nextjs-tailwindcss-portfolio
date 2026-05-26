@@ -1,0 +1,75 @@
+[
+  {
+    "id": "moovbet-2026",
+    "company": "Moovbet.com",
+    "role": "Engenheiro de Software Full Stack | NestJS · React · Next.js · C# / .NET | iGaming",
+    "period": "mai 2026 — Presente",
+    "location": "Remoto · Brasil",
+    "highlights": [
+      "Back-end e backoffice com NestJS/Node.js e C#/ASP.NET: APIs REST, microsserviços, integrações e sistemas administrativos.",
+      "Migração contínua React → Next.js (SSG/SSR) para performance, SEO e experiência do usuário em iGaming.",
+      "Testes com Jest/Supertest, pipelines CI/CD, mocks e isolamento de banco para releases confiáveis.",
+      "Stack: NestJS, Node.js, TypeScript, C#, .NET, PostgreSQL, Docker, React, Next.js, AWS, Redis, mensageria."
+    ]
+  },
+  {
+    "id": "moovbet-2025",
+    "company": "Moovbet.com",
+    "role": "Desenvolvedor Full Stack | Node.js · NestJS · Next.js · React · Docker | iGaming",
+    "period": "mai 2025 — nov 2025 (7 meses)",
+    "location": "Brasil",
+    "highlights": [
+      "Liderança na migração para Next.js (SSG/SSR): +70% na velocidade de carregamento; Lighthouse ~45 → 90+.",
+      "Back-end escalável com NestJS, TypeScript, APIs REST, injeção de dependência e arquitetura modular.",
+      "SEO avançado: Open Graph, JSON-LD, sitemap, robots.txt; i18n com Crowdin.",
+      "Dockerização para dev/staging/prod; Scrum, code reviews, pair programming e CI/CD."
+    ]
+  },
+  {
+    "id": "weebt",
+    "company": "Wee.BT",
+    "role": "Desenvolvedor Full Stack | Back-end Node.js · PostgreSQL · Web/Mobile",
+    "period": "jun 2024 — mai 2025 (1 ano)",
+    "location": "Brasil",
+    "highlights": [
+      "Apps mobile (Android/iOS) e web para gestão de torneios de beach tennis: inscrições, pagamentos, ranking, placar ao vivo.",
+      "Fluxo inscrição + pagamento (Asaas): 4min20s → 2min48s; abandono 42% → 18%; inscrições pagas +25%.",
+      "Checkout 2.3s → 0.8s; webhooks + filas Bull/Redis; NPS 32 → 68.",
+      "Stack: Node.js, PostgreSQL, FlutterFlow/Dart, GCP, APIs REST, Scrum/Kanban."
+    ]
+  },
+  {
+    "id": "watendimento",
+    "company": "WAtendimento",
+    "role": "Desenvolvedor Backend Node.js | Chatbots e Automação com IA",
+    "period": "dez 2024 — fev 2025 (3 meses)",
+    "location": "Recife, PE",
+    "highlights": [
+      "Chatbot GPT + WhatsApp Business API: −60% TMA e −55% esforço manual.",
+      "Backend multi-tenant, webhooks, integração CRM (CobCloud), deploy GCP Cloud Run e Docker.",
+      "Clean Code, documentação de API e Git para código sustentável."
+    ]
+  },
+  {
+    "id": "qualinfo",
+    "company": "Qualinfo Tecnologia para Educação",
+    "role": "Analista de Suporte Técnico N2/N3 (SaaS ERP, GED, Diploma Digital)",
+    "period": "set 2022 — jun 2024 (1 ano 10 meses)",
+    "location": "Recife, PE",
+    "highlights": [
+      "Suporte N2/N3, SQL Server, Crystal Reports e implantação de Diploma Digital (MEC/XML).",
+      "Ponte entre clientes e desenvolvimento: incidentes, priorização e melhoria contínua de produtos SaaS."
+    ]
+  },
+  {
+    "id": "sidi",
+    "company": "SiDi · Embarque Digital / Porto Digital",
+    "role": "Residência Tecnológica — Rise Up",
+    "period": "set 2022 — dez 2022 (4 meses)",
+    "location": "Recife, PE",
+    "highlights": [
+      "Desafios reais com mentoria SiDi: soluções tecnológicas em equipe multidisciplinar.",
+      "Capacitação via cursos, bootcamps e mentorias alinhados ao mercado."
+    ]
+  }
+]

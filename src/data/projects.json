@@ -2,15 +2,15 @@
   {
     "id": 1,
     "slug": "bolsa-api-nest-arquitetura-modular",
-    "title": "Back-end: NestJS, Prisma migrations, banco PostgreSQL e Docker",
+    "title": "API REST & Microsserviços — NestJS, PostgreSQL, Docker (padrões Java/Spring Boot)",
     "url": "bolsa-api-nest-arquitetura-modular",
-    "category": "Backend / APIs REST / DevOps",
+    "category": "Backend · APIs REST · Microsserviços · DevOps",
     "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png",
     "repositoryLink": "https://github.com/dbfcode/bolsa-Node.js-NestJS-back-end",
     "ProjectHeader": {
       "title": "Bolsa API — Arquitetura Modulada com NestJS, Prisma, Docker e PostgreSQL",
       "publishDate": "2025",
-      "tags": "NestJS / Node.js / Prisma ORM / PostgreSQL / Docker / Autenticação JWT / Arquitetura Modular / DevOps"
+      "tags": "API REST / Microsserviços / NestJS / Node.js / TypeScript / PostgreSQL / Docker / JWT / Swagger / TDD-ready"
     },
     "ProjectImages": [
       {
@@ -61,13 +61,18 @@
           "id": "item-9",
           "title": "Autor",
           "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "extra-bolsa-api-nest-arquitetura-modular",
+          "title": "Relevância profissional",
+          "details": "Base técnica para atuação como Java Spring Boot Developer e construtor de microsserviços em iGaming e SaaS."
         }
       ],
       "ObjectivesHeading": "Propósito e Objetivo",
-      "ObjectivesDetails": "Construir uma API modular, escalável e completamente dockerizada para um simulador educacional de operações na bolsa de valores. O foco do projeto inclui autenticação robusta com JWT via Cookies HttpOnly, documentação via Swagger, módulos independentes (users, auth, assets, orders, wallet, simulation), migrations e seeds automatizados via Prisma, e um ciclo de desenvolvimento altamente otimizado com Docker, garantindo que novos membros do time possam iniciar o ambiente com apenas um comando.",
+      "ObjectivesDetails": "Demonstrar competência de Desenvolvedor Backend em APIs REST escaláveis, com arquitetura modular alinhada a boas práticas de Java Spring Boot (domínios, injeção de dependência, camadas). API dockerizada para simulador de bolsa, com autenticação JWT HttpOnly, Swagger, Prisma, migrations/seeds e setup automatizado para produção e onboarding de times.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "NestJS 11",
             "Node.js 20",
@@ -79,7 +84,11 @@
             "Swagger OpenAPI 3",
             "bcryptjs",
             "Class Validator",
-            "Arquitetura Modular"
+            "Arquitetura Modular",
+            "API REST",
+            "Microsserviços",
+            "Arquitetura em camadas",
+            "CI/CD-ready"
           ]
         }
       ],
@@ -87,7 +96,7 @@
       "ProjectDetails": [
         {
           "id": "item-10",
-          "details": "Autenticação avançada com JWT via Cookies HttpOnly: login envia o token em cookie httpOnly, Secure e SameSite, prevenindo XSS e mantendo o front-end mais seguro e compatível com SSR."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Autenticação avançada com JWT via Cookies HttpOnly: login envia o token em cookie httpOnly, Secure e SameSite, prevenindo XSS e mantendo o front-end mais seguro e compatível com SSR."
         },
         {
           "id": "item-11",
@@ -130,16 +139,16 @@
   {
     "id": 2,
     "slug": "autenticacao-nextjs-react-cookie-httponly",
-    "title": "Autenticação com Cookies HttpOnly – Next.js + React + Atomic Design",
+    "title": "Full Stack · Auth segura — Next.js, React, NestJS, API REST (mobile web)",
     "url": "autenticacao-nextjs-react-cookie-httponly",
-    "category": "Web Application / Frontend + API",
+    "category": "Web/Mobile · Full Stack · API REST · Segurança",
     "img": "/images/solo-login/login-desktop.png",
     "projectLink": "https://login-cadastro-react-next-atomic.vercel.app/",
     "repositoryLink": "https://github.com/dbfcode/Login-Cadastro-React-Next-Atomic",
     "ProjectHeader": {
       "title": "Autenticação com Cookies HttpOnly – React/Next + NestJS",
       "publishDate": "2025",
-      "tags": "Next.js / React / NestJS / JWT / Cookies HttpOnly / Atomic Design"
+      "tags": "Next.js / React / NestJS / API REST / JWT / Cookies HttpOnly / TypeScript / Mobile Web / Atomic Design"
     },
     "ProjectImages": [
       {
@@ -175,13 +184,18 @@
           "id": "item-24",
           "title": "Padrão de UI",
           "details": "Atomic Design (Atoms → Molecules → Organisms)"
+        },
+        {
+          "id": "extra-autenticacao-nextjs-react-cookie-httponly",
+          "title": "Contexto",
+          "details": "Integrações auth/sessão similares às implementadas em Moovbet e produtos iGaming."
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Criar um módulo completo de autenticação com React/Next no Client-Side, consumindo o módulo de autenticação da API que construí em NestJS e utilizando JWT em Cookies HttpOnly para segurança real contra XSS. O foco é demonstrar domínio de componentização (Atomic Design), arquitetura limpa, formulários controlados, integração com backend real e preparo para futuras migrações para SSR/Server Actions.",
+      "ObjectivesDetails": "Módulo full stack de autenticação para aplicações web e mobile web, consumindo API REST NestJS com JWT em cookies HttpOnly (anti-XSS). Reflete entregas em produção: integração front/back, formulários tipados, Atomic Design e base para SSR/Server Actions — stack complementar ao ecossistema Java/Spring Boot em APIs seguras.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "Next.js 15",
             "React 19",
@@ -194,7 +208,11 @@
             "Tailwind CSS 4",
             "Atomic Design",
             "Zod/React Hook Form",
-            "Axios/Fetch"
+            "Axios/Fetch",
+            "API REST",
+            "Segurança de API",
+            "Mobile Web",
+            "Full Stack"
           ]
         }
       ],
@@ -202,7 +220,7 @@
       "ProjectDetails": [
         {
           "id": "item-25",
-          "details": "Autenticação com Cookies HttpOnly: o login envia email e senha para a API NestJS, que devolve um JWT dentro de um cookie HttpOnly, Secure e SameSite. O cookie não pode ser acessado via JavaScript, protegendo o usuário contra ataques XSS."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Autenticação com Cookies HttpOnly: o login envia email e senha para a API NestJS, que devolve um JWT dentro de um cookie HttpOnly, Secure e SameSite. O cookie não pode ser acessado via JavaScript, protegendo o usuário contra ataques XSS."
         },
         {
           "id": "item-26",
@@ -237,15 +255,15 @@
   {
     "id": 3,
     "slug": "streamhub-plataforma-streaming",
-    "title": "Homepage, Idiomas, SEO SSR/SSG - React/Next.js",
+    "title": "StreamHub — Next.js, SEO, SSR/SSG (case iGaming / performance)",
     "url": "streamhub-plataforma-streaming",
-    "category": "Web Application",
+    "category": "Web Application · SEO · iGaming-ready",
     "img": "/images/streamhub/streamhub-portfolio.png",
     "projectLink": "https://streamhub-reactjs-nextjs-plataform-1ve71j6xo-dig-ies-projects.vercel.app/",
     "ProjectHeader": {
       "title": "StreamHub - Plataforma de Streaming",
       "publishDate": "Dez 2024",
-      "tags": "Next.js / React / TypeScript / Frontend"
+      "tags": "Next.js / React / TypeScript / API REST / SSR / SSG / SEO / i18n / Performance / iGaming"
     },
     "ProjectImages": [
       {
@@ -286,13 +304,18 @@
           "id": "item-38",
           "title": "Licença",
           "details": "MIT License"
+        },
+        {
+          "id": "extra-streamhub-plataforma-streaming",
+          "title": "Resultados (referência CV)",
+          "details": "Performance, SEO orgânico e experiência fluida para alta demanda e retenção de usuários."
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Aplicação moderna de streaming de filmes e séries desenvolvida com Next.js 15, React 19 e TypeScript, demonstrando proficiência em arquitetura escalável, performance otimizada e Design System consistente. O projeto foi desenvolvido como demonstração técnica para demonstrar habilidades em desenvolvimento front-end moderno.",
+      "ObjectivesDetails": "Plataforma de streaming demonstrando migração e otimização React → Next.js (SSG/SSR), alinhada à experiência em iGaming: +70% velocidade, Lighthouse 90+, SEO multilíngue, React Query, Core Web Vitals e arquitetura escalável — mesmas métricas e técnicas aplicadas em produção na Moovbet.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "Next.js 15.3",
             "React 19",
@@ -306,7 +329,11 @@
             "next-i18next",
             "ESLint",
             "Prettier",
-            "Docker"
+            "Docker",
+            "SEO técnico",
+            "Core Web Vitals",
+            "iGaming",
+            "Crowdin/i18n"
           ]
         }
       ],
@@ -314,7 +341,7 @@
       "ProjectDetails": [
         {
           "id": "item-39",
-          "details": "Performance & Otimização: Implementação de lazy loading com infinite scroll usando React Query, paginação inteligente com caching estratégico da API OMDB, geração de páginas estáticas (SSR/SSG) para 23 idiomas, otimização de imagens com Next/Image e code splitting com dynamic imports e chunking automático."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Performance & Otimização: Implementação de lazy loading com infinite scroll usando React Query, paginação inteligente com caching estratégico da API OMDB, geração de páginas estáticas (SSR/SSG) para 23 idiomas, otimização de imagens com Next/Image e code splitting com dynamic imports e chunking automático."
         },
         {
           "id": "item-40",
@@ -340,16 +367,16 @@
   {
     "id": 4,
     "slug": "cadastro-login-pagina-usuario-aplicacao-react",
-    "title": "Cadastro, Login e Página do Usuário - Aplicação React",
+    "title": "Auth Web/Mobile — React, Firebase, API de autenticação",
     "url": "cadastro-login-pagina-usuario-aplicacao-react",
-    "category": "Web Application",
+    "category": "Web/Mobile Application · Full Stack",
     "img": "/images/react-auth-ui-firebase/react-auth-ui-firebase.png",
     "repositoryLink": "https://github.com/dbfcode/react-registration-login-userHome-home",
     "projectLink": "https://react-registration-login-user-home-home.vercel.app/",
     "ProjectHeader": {
       "title": "Cadastro, Login e Página do Usuário - Aplicação React",
       "publishDate": "2024",
-      "tags": "React / Firebase Auth / React Router / Styled Components"
+      "tags": "React / Mobile Web / Firebase Auth / API REST / React Router / TypeScript-ready"
     },
     "ProjectImages": [
       {
@@ -393,10 +420,10 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Fluxo completo de autenticação de usuários utilizando React, Firebase Auth, React Router Dom e Styled Components, com base em um protótipo visual do Figma da DIO. A aplicação implementa formulários, validações e navegação utilizando react-hook-form para controle de formulários, yup para validação dos dados, react-router-dom para rotas, firebase para autenticação na nuvem e styled-components para estilização baseada no protótipo Figma.",
+      "ObjectivesDetails": "Fluxo completo de autenticação web/mobile com React e Firebase Auth, validação (React Hook Form + Yup) e UI baseada em Figma — fundamentos de produto digital e integração com serviços em nuvem, etapa anterior à stack corporativa Java/Node em APIs REST.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "React",
             "Firebase Auth",
@@ -405,7 +432,9 @@
             "React Hook Form",
             "Yup",
             "Figma",
-            "Vercel"
+            "Vercel",
+            "Mobile Web Developer",
+            "Autenticação"
           ]
         }
       ],
@@ -413,7 +442,7 @@
       "ProjectDetails": [
         {
           "id": "item-50",
-          "details": "Formulários com React Hook Form: Implementação de controle eficiente do estado dos inputs, melhorando a performance e facilitando a gestão de formulários complexos com múltiplos campos de validação."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Formulários com React Hook Form: Implementação de controle eficiente do estado dos inputs, melhorando a performance e facilitando a gestão de formulários complexos com múltiplos campos de validação."
         },
         {
           "id": "item-51",
@@ -438,16 +467,16 @@
   {
     "id": 5,
     "slug": "mini-erp-crm-php-mysql-rabbitmq-asaas",
-    "title": "Mini ERP/CRM - PHP, MySQL, RabbitMQ, Asaas e Docker",
+    "title": "Mini ERP/CRM — APIs, filas, microsserviços, integrações (PHP)",
     "url": "mini-erp-crm-php-mysql-rabbitmq-asaas",
-    "category": "Web Application / Full Stack",
+    "category": "Full Stack · APIs REST · Microsserviços",
     "img": "/images/PHP_CRM_ERP/dashboard.png",
     "repositoryLink": "https://github.com/dbfcode/PHP-Mini-ERP-CRM-8-Apache-MySQL-RabbitMQ",
     "projectLink": null,
     "ProjectHeader": {
       "title": "Mini ERP/CRM em PHP 8 + MySQL + RabbitMQ + Asaas",
       "publishDate": "2024",
-      "tags": "PHP 8 / MySQL / RabbitMQ / Docker / Asaas API"
+      "tags": "PHP 8 / MySQL / API REST / RabbitMQ / Microsserviços / Docker / Asaas / Integrações"
     },
     "ProjectImages": [
       {
@@ -496,10 +525,10 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Projeto educacional demonstrando a construção de um Mini ERP/CRM completo usando PHP 8 sem framework, com autenticação por sessão, CRUD de clientes e pedidos, geração de cobranças via Asaas (PIX/Boleto/Cartão), publicação de eventos no RabbitMQ e worker consumidor para orquestração assíncrona. Arquitetura em camadas com MVC enxuto e containers Docker para ambiente completo.",
+      "ObjectivesDetails": "Mini ERP/CRM com APIs, eventos assíncronos (RabbitMQ), integração de pagamentos (Asaas) e Docker — demonstra modelagem de domínio, filas e integrações presentes em backends Java/Spring Boot e Node.js em ambientes de produção.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "PHP 8.2 (Apache)",
             "MySQL 8",
@@ -509,7 +538,11 @@
             "php-amqplib/php-amqplib",
             "Monolog",
             "PDO",
-            "Sessions"
+            "Sessions",
+            "Microsserviços",
+            "Mensageria",
+            "API REST",
+            "Integrações"
           ]
         }
       ],
@@ -517,7 +550,7 @@
       "ProjectDetails": [
         {
           "id": "item-63",
-          "details": "Arquitetura em camadas com MVC enxuto: Controllers para lógica de fluxo (Auth, Client, Order, Payment), Models com PDO, Services para integrações externas (Asaas), Queue Publisher para RabbitMQ e worker separado para consumo de eventos."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Arquitetura em camadas com MVC enxuto: Controllers para lógica de fluxo (Auth, Client, Order, Payment), Models com PDO, Services para integrações externas (Asaas), Queue Publisher para RabbitMQ e worker separado para consumo de eventos."
         },
         {
           "id": "item-64",
@@ -553,16 +586,16 @@
   {
     "id": 6,
     "slug": "gitfind",
-    "title": "GitFind - React ",
+    "title": "GitFind — React, consumo de API REST pública",
     "url": "gitfind",
-    "category": "Web Application",
+    "category": "Web Application · JavaScript · API REST",
     "img": "/images/gitfind/gitfind_after_search.png",
     "repositoryLink": "https://github.com/dbfcode/React-gitFind",
     "projectLink": "https://dbfcode.github.io/React-gitFind/",
     "ProjectHeader": {
       "title": "GitFind",
       "publishDate": "2024",
-      "tags": "React 17 / CRA / JavaScript / CSS / GitHub API"
+      "tags": "React / JavaScript / API REST / GitHub API / Web Developer"
     },
     "ProjectImages": [
       {
@@ -601,17 +634,19 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Projeto desenvolvido intencionalmente com padrões antigos do React (Era CRA – 2016 ~ 2021), explorando práticas e estruturas hoje consideradas datadas, mas que marcaram a evolução do ecossistema. O objetivo foi entender como eram organizadas aplicações React nas primeiras gerações, especialmente durante a era do Create React App (CRA), comparando com os patterns modernos (Next.js, Vite, Hooks, CSS Modules, Tailwind etc.).",
+      "ObjectivesDetails": "Estudo de consumo de API REST (GitHub API) e evolução do ecossistema front-end — base para transição a TypeScript, Next.js e backends Java/Node corporativos.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "React 17",
             "Create React App (CRA)",
             "JavaScript (.js)",
             "CSS tradicional (.css)",
             "GitHub API",
-            "Fetch API"
+            "Fetch API",
+            "API REST",
+            "JavaScript Developer"
           ]
         }
       ],
@@ -619,7 +654,7 @@
       "ProjectDetails": [
         {
           "id": "item-76",
-          "details": "Padrões Antigos Intencionais: O código adota padrões anteriores à popularização de Hooks, TypeScript e CSS-in-JS, como estrutura baseada em arquivos `.js` e `.css` separados, componentes funcionais simples (sem Hooks modernos), estilos globais e importações diretas (`import './App.css'`), nenhum uso de TypeScript (`.tsx`) ou Tailwind/styled-components, e build configurado via Create React App (CRA)."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Padrões Antigos Intencionais: O código adota padrões anteriores à popularização de Hooks, TypeScript e CSS-in-JS, como estrutura baseada em arquivos `.js` e `.css` separados, componentes funcionais simples (sem Hooks modernos), estilos globais e importações diretas (`import './App.css'`), nenhum uso de TypeScript (`.tsx`) ou Tailwind/styled-components, e build configurado via Create React App (CRA)."
         },
         {
           "id": "item-77",
@@ -640,16 +675,16 @@
   {
     "id": 7,
     "slug": "pokedex-com-pokeapi",
-    "title": "Pokédex com PokeAPI - Javascript, HTML e CSS",
+    "title": "Pokédex — API REST, performance web/mobile",
     "url": "pokedex-com-pokeapi",
-    "category": "Web Application",
+    "category": "Web/Mobile · API REST · JavaScript",
     "img": "/images/pokedex.png",
     "repositoryLink": "https://github.com/dbfcode/pokedex-JAVASCRIPT-CSS-HTML-API-pokemon",
     "projectLink": "https://dbfcode.github.io/pokedex-JAVASCRIPT-CSS-HTML-API-pokemon/",
     "ProjectHeader": {
       "title": "Pokédex com PokeAPI",
       "publishDate": "Jan 2024",
-      "tags": "HTML5 / CSS3 / JavaScript / API REST"
+      "tags": "JavaScript / API REST / PokeAPI / Performance / Mobile Web / Bootstrap"
     },
     "ProjectImages": [
       {
@@ -693,10 +728,10 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Uma Pokédex interativa que consome dados da PokeAPI, exibindo informações de diversos Pokémon em tempo real com sistema de busca flexível e otimizado. Projeto desenvolvido como prática de front-end vanilla focado em consumo de API REST pública, manipulação assíncrona de dados e otimizações de performance.",
+      "ObjectivesDetails": "Pokédex com consumo intensivo de API REST, cache, debounce e paginação — práticas de performance web/mobile aplicáveis a catálogos e listagens em produtos iGaming e SaaS.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "HTML5",
             "CSS3",
@@ -707,7 +742,10 @@
             "Async/Await",
             "Debounce Pattern",
             "Cache Strategy",
-            "Normalize.css"
+            "Normalize.css",
+            "API REST",
+            "Mobile Web",
+            "Performance"
           ]
         }
       ],
@@ -715,7 +753,7 @@
       "ProjectDetails": [
         {
           "id": "item-87",
-          "details": "Busca Flexível em Tempo Real: Sistema de pesquisa com correspondência parcial do nome (case-insensitive), buscando substrings para encontrar Pokémon mesmo com digitação parcial. Exemplo: digitando 'pika' encontra 'pikachu', digitando 'char' encontra 'charmander', 'charmeleon' e 'charizard'. Implementado com limite de 20 resultados para otimização."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Busca Flexível em Tempo Real: Sistema de pesquisa com correspondência parcial do nome (case-insensitive), buscando substrings para encontrar Pokémon mesmo com digitação parcial. Exemplo: digitando 'pika' encontra 'pikachu', digitando 'char' encontra 'charmander', 'charmeleon' e 'charizard'. Implementado com limite de 20 resultados para otimização."
         },
         {
           "id": "item-88",
@@ -736,16 +774,16 @@
   {
     "id": 8,
     "slug": "portfolio-mobile-first-javascript",
-    "title": "Portfólio Mobile First JavaScript, HTML e CSS",
+    "title": "Portfólio Mobile Web — JavaScript, API REST, GitHub",
     "url": "portfolio-mobile-first-javascript",
-    "category": "Web Application",
+    "category": "Mobile Web · API REST",
     "img": "/images/trilha-js-portfolio/desktop.png",
     "repositoryLink": "https://github.com/dbfcode/trilha-js-portfolio",
     "projectLink": "https://dbfcode.github.io/trilha-js-portfolio/",
     "ProjectHeader": {
       "title": "Portfólio Mobile First JavaScript",
       "publishDate": "2024",
-      "tags": "HTML5 / CSS3 / JavaScript / Mobile First"
+      "tags": "Mobile Web Developer / JavaScript / API REST / GitHub API / Mobile First"
     },
     "ProjectImages": [
       {
@@ -789,10 +827,10 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Portfólio desenvolvido com abordagem Mobile First utilizando HTML, CSS e JavaScript puro. O conteúdo é parcialmente carregado a partir da API pública do GitHub e parcialmente de um arquivo local profile.json presente no repositório. O projeto foi criado como exercício de fundamentos de front-end, responsividade, manipulação de DOM e consumo de API REST.",
+      "ObjectivesDetails": "Portfólio mobile-first com consumo de API REST (GitHub) e JSON estático — origem da evolução para este portfólio Next.js com SEO para Java Spring Boot Developer e microsserviços.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "HTML5",
             "CSS3",
@@ -801,7 +839,9 @@
             "Fetch API",
             "Responsividade Mobile First",
             "DOM Manipulation",
-            "GitHub Pages"
+            "GitHub Pages",
+            "Mobile Web Developer",
+            "API REST"
           ]
         }
       ],
@@ -809,7 +849,7 @@
       "ProjectDetails": [
         {
           "id": "item-98",
-          "details": "Layout Mobile First: Todo o design e estrutura da aplicação foi pensado para priorizar telas pequenas, garantindo fluidez e responsividade em dispositivos móveis antes da adaptação para telas maiores."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: Layout Mobile First: Todo o design e estrutura da aplicação foi pensado para priorizar telas pequenas, garantindo fluidez e responsividade em dispositivos móveis antes da adaptação para telas maiores."
         },
         {
           "id": "item-99",
@@ -837,14 +877,14 @@
   {
     "id": 9,
     "slug": "crud-console-linguagem-c",
-    "title": "CRUD de Anotações no Console — Linguagem C",
+    "title": "CRUD Console — Lógica e estruturas (base de formação)",
     "url": "crud-console-linguagem-c",
-    "category": "Programação Estruturada / Console Application",
+    "category": "Formação · Lógica de programação",
     "img": "/images/linguagem_c/linguagem_c_crud_console.png",
     "ProjectHeader": {
       "title": "CRUD de Anotações no Console em Linguagem C",
       "publishDate": "1º período da faculdade",
-      "tags": "C / CRUD / Console / Lógica de Programação / Projeto Acadêmico"
+      "tags": "C / CRUD / Estruturas de dados / Formação acadêmica"
     },
     "ProjectImages": [
       {
@@ -888,15 +928,17 @@
         }
       ],
       "ObjectivesHeading": "Objetivo",
-      "ObjectivesDetails": "Desenvolver um CRUD em Linguagem C executado no console, com foco em consolidar uma base sólida de programação ao final do 1º período da disciplina de CODING. O projeto reforça a compreensão da sintaxe da linguagem C, lógica e raciocínio algorítmico, programação procedural/estruturada, estruturas de dados básicas (como struct e vetores) e controle de fluxo, servindo como alicerce para estudos posteriores em algoritmos, estruturas de dados mais avançadas e sistemas de baixo nível.",
+      "ObjectivesDetails": "Projeto acadêmico em C reforçando lógica, estruturas de dados e CRUD — alicerce da trilha até Análise de Sistemas, Java/Spring Boot e desenvolvimento backend profissional.",
       "Technologies": [
         {
-          "title": "Ferramentas & Tecnologias",
+          "title": "Stack & competências (API REST · Backend · Web/Mobile)",
           "techs": [
             "Linguagem C",
             "Programação Estruturada",
             "Entrada e Saída no Console",
-            "Replit IDE"
+            "Replit IDE",
+            "Fundamentos",
+            "Análise de Sistemas"
           ]
         }
       ],
@@ -904,7 +946,7 @@
       "ProjectDetails": [
         {
           "id": "item-110",
-          "details": "CRUD completo no console, implementado integralmente em Linguagem C, contemplando criação, listagem, edição e remoção de anotações por meio de um menu interativo, reforçando fundamentos clássicos de aplicações baseadas em fluxo."
+          "details": "Alinhado ao perfil de Desenvolvedor Java/Spring Boot, APIs REST e microsserviços: CRUD completo no console, implementado integralmente em Linguagem C, contemplando criação, listagem, edição e remoção de anotações por meio de um menu interativo, reforçando fundamentos clássicos de aplicações baseadas em fluxo."
         },
         {
           "id": "item-111",

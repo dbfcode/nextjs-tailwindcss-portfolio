@@ -1,10 +1,3 @@
-export type ProjectCategory =
-  | "Backend / APIs REST / DevOps"
-  | "Web Application / Frontend + API"
-  | "Web Application"
-  | "Web Application / Full Stack"
-  | "Programação Estruturada / Console Application";
-
 export interface LabeledItem {
   id: string;
   title: string;
@@ -78,17 +71,26 @@ export interface BioParagraph {
   bio: string;
 }
 
+export interface Language {
+  name: string;
+  level: string;
+}
+
 export interface Profile {
   name: string;
   role: string;
+  headline?: string;
   tagline: string;
   location: string;
   email: string;
   phone: string;
+  phoneWhatsApp?: string;
   github: string;
   linkedin: string;
+  portfolio?: string;
   resumePath: string;
   avatar: string;
+  languages?: Language[];
 }
 
 export interface Stat {
@@ -108,11 +110,30 @@ export interface SiteConfig {
   description: string;
   author: string;
   url: string;
+  keywords?: string[];
   nav: NavItem[];
 }
 
 export interface SkillsProfile {
   competencies: string[];
+  softSkills?: string[];
   deliverables: string[];
   roles: string[];
+  certifications?: string[];
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  period: string;
+  location: string;
+  highlights: string[];
+}
+
+export interface Education {
+  id: string;
+  institution: string;
+  course: string;
+  period: string;
 }
