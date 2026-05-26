@@ -7,6 +7,9 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { site } from "@/lib/portfolio";
 import "./globals.css";
 
+/** Garante SSG em todas as rotas (HTML estático no build). */
+export const dynamic = "force-static";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
