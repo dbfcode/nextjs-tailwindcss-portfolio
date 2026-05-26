@@ -4,8 +4,8 @@ import { profile, site } from "@/lib/portfolio";
 import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Contato | Java Spring Boot Developer · Recife, Brasil",
-  description: `Contato com ${profile.name} — Desenvolvedor Full Stack, Java, Spring Boot, APIs REST e microsserviços. ${profile.location}.`,
+  title: "Contato | Especialista Java · Backend Spring Boot · Recife",
+  description: `Contato com ${profile.name} — Engenheiro de Software, Especialista Java, Backend Spring Boot, APIs REST e microsserviços. ${profile.location}.`,
   keywords: site.keywords,
 };
 
@@ -25,7 +25,7 @@ export default function ContactPage() {
     },
     {
       icon: Globe,
-      label: "Portfólio (Vercel)",
+      label: "Portfólio",
       href: profile.portfolio ?? site.url,
     },
     { icon: Github, label: "github.com/dbfcode", href: profile.github },
@@ -38,12 +38,15 @@ export default function ContactPage() {
           Entre em <span className="gradient-text">contato</span>
         </h1>
         <p className="mt-4 text-muted">
-          Disponível para oportunidades como{" "}
+          Oportunidades como{" "}
           <strong className="font-medium text-foreground">
-            Java Spring Boot Developer
+            Especialista Java
           </strong>
-          , backend, APIs REST, microsserviços, full stack e mobile web — Remoto
-          ou híbrido.
+          ,{" "}
+          <strong className="font-medium text-foreground">
+            Desenvolvedor Backend Spring Boot
+          </strong>
+          , APIs REST, microsserviços e engenharia full stack mobile/web.
         </p>
       </div>
 

@@ -31,7 +31,7 @@ export async function generateMetadata({
   const project = getProjectBySlug(slug);
   if (!project) return { title: "Projeto não encontrado" };
   return {
-    title: `${project.ProjectHeader.title} | API REST · Java · Full Stack`,
+    title: `${project.ProjectHeader.title} | Backend Java · API REST · Microsserviços`,
     description: project.ProjectInfo.ObjectivesDetails.slice(0, 160),
     keywords: site.keywords,
   };

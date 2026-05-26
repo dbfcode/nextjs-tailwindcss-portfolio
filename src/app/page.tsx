@@ -19,7 +19,7 @@ export default function HomePage() {
       <ProjectsGrid
         projects={featured}
         title="Projetos em destaque"
-        subtitle="APIs REST, microsserviços, Next.js, mobile web, Docker e IA aplicada"
+        subtitle="Backend, APIs REST, microsserviços, integrações e entregas full stack mobile/web"
       />
       <div className="flex justify-center pb-10">
         <Button href="/projects" variant="secondary">

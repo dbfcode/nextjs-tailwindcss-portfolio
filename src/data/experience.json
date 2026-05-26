@@ -2,63 +2,63 @@
   {
     "id": "moovbet-2026",
     "company": "Moovbet.com",
-    "role": "Engenheiro de Software Full Stack | NestJS · React · Next.js · C# / .NET | iGaming",
+    "role": "Engenheiro de Software · Backend & Full Stack | NestJS · Java patterns · C#/.NET | iGaming",
     "period": "mai 2026 — Presente",
     "location": "Remoto · Brasil",
     "highlights": [
-      "Back-end e backoffice com NestJS/Node.js e C#/ASP.NET: APIs REST, microsserviços, integrações e sistemas administrativos.",
-      "Migração contínua React → Next.js (SSG/SSR) para performance, SEO e experiência do usuário em iGaming.",
-      "Testes com Jest/Supertest, pipelines CI/CD, mocks e isolamento de banco para releases confiáveis.",
-      "Stack: NestJS, Node.js, TypeScript, C#, .NET, PostgreSQL, Docker, React, Next.js, AWS, Redis, mensageria."
+      "Foco em backend e backoffice: APIs REST, regras de negócio, microsserviços (e-mail, operações), NestJS/Node.js e C#/ASP.NET.",
+      "Arquitetura orientada a serviços, modelagem de domínio, SQL/PostgreSQL e confiabilidade para iGaming de alta demanda.",
+      "Testes Jest/Supertest, CI/CD, mocks e isolamento de banco; entrega full stack mobile/web quando o produto exige.",
+      "Stack: NestJS, Node.js, TypeScript, C#, .NET, PostgreSQL, Docker, AWS, Redis, mensageria."
     ]
   },
   {
     "id": "moovbet-2025",
     "company": "Moovbet.com",
-    "role": "Desenvolvedor Full Stack | Node.js · NestJS · Next.js · React · Docker | iGaming",
+    "role": "Desenvolvedor Full Stack · Backend-first | NestJS · APIs REST | iGaming",
     "period": "mai 2025 — nov 2025 (7 meses)",
     "location": "Brasil",
     "highlights": [
-      "Liderança na migração para Next.js (SSG/SSR): +70% na velocidade de carregamento; Lighthouse ~45 → 90+.",
-      "Back-end escalável com NestJS, TypeScript, APIs REST, injeção de dependência e arquitetura modular.",
-      "SEO avançado: Open Graph, JSON-LD, sitemap, robots.txt; i18n com Crowdin.",
-      "Dockerização para dev/staging/prod; Scrum, code reviews, pair programming e CI/CD."
+      "Backend escalável: NestJS, TypeScript, APIs REST, injeção de dependência, arquitetura modular e segurança de API.",
+      "Ganhos de performance de sistema +70% e Lighthouse 90+ em produto de alta conversão (iGaming).",
+      "Integrações auth/sessão, i18n server-side, Docker e CI/CD; atuação full stack com prioridade em camada de serviços.",
+      "SEO e metadados como requisito de plataforma, não como foco de carreira front-end."
     ]
   },
   {
     "id": "weebt",
     "company": "Wee.BT",
-    "role": "Desenvolvedor Full Stack | Back-end Node.js · PostgreSQL · Web/Mobile",
+    "role": "Desenvolvedor Full Stack · Backend Node.js · PostgreSQL · Mobile Web",
     "period": "jun 2024 — mai 2025 (1 ano)",
     "location": "Brasil",
     "highlights": [
-      "Apps mobile (Android/iOS) e web para gestão de torneios de beach tennis: inscrições, pagamentos, ranking, placar ao vivo.",
-      "Fluxo inscrição + pagamento (Asaas): 4min20s → 2min48s; abandono 42% → 18%; inscrições pagas +25%.",
-      "Checkout 2.3s → 0.8s; webhooks + filas Bull/Redis; NPS 32 → 68.",
-      "Stack: Node.js, PostgreSQL, FlutterFlow/Dart, GCP, APIs REST, Scrum/Kanban."
+      "Backend Node.js + PostgreSQL: APIs REST, modelagem SQL, ranking, pagamentos (Asaas), webhooks e filas Bull/Redis.",
+      "Redução de abandono no checkout (42% → 18%) e NPS 32 → 68 com automação backend.",
+      "Produto mobile/web full stack (FlutterFlow) integrado a serviços e regras de torneio em tempo real.",
+      "GCP, integrações e trabalho em squad multidisciplinar (Scrum/Kanban)."
     ]
   },
   {
     "id": "watendimento",
     "company": "WAtendimento",
-    "role": "Desenvolvedor Backend Node.js | Chatbots e Automação com IA",
+    "role": "Desenvolvedor Backend Node.js · IA · APIs · Automação",
     "period": "dez 2024 — fev 2025 (3 meses)",
     "location": "Recife, PE",
     "highlights": [
-      "Chatbot GPT + WhatsApp Business API: −60% TMA e −55% esforço manual.",
-      "Backend multi-tenant, webhooks, integração CRM (CobCloud), deploy GCP Cloud Run e Docker.",
-      "Clean Code, documentação de API e Git para código sustentável."
+      "Backend multi-tenant com Node.js, OpenAI, WhatsApp Business API e webhooks para CRM.",
+      "−60% TMA e −55% esforço manual; deploy GCP Cloud Run, Docker e Clean Code.",
+      "Arquitetura de chatbots e automação escalável para múltiplos clientes SaaS."
     ]
   },
   {
     "id": "qualinfo",
     "company": "Qualinfo Tecnologia para Educação",
-    "role": "Analista de Suporte Técnico N2/N3 (SaaS ERP, GED, Diploma Digital)",
+    "role": "Analista de Suporte Técnico N2/N3 · SaaS · SQL Server",
     "period": "set 2022 — jun 2024 (1 ano 10 meses)",
     "location": "Recife, PE",
     "highlights": [
-      "Suporte N2/N3, SQL Server, Crystal Reports e implantação de Diploma Digital (MEC/XML).",
-      "Ponte entre clientes e desenvolvimento: incidentes, priorização e melhoria contínua de produtos SaaS."
+      "SQL Server, integridade de dados, ERP/GED SaaS e ponte com times de desenvolvimento.",
+      "Implantação Diploma Digital (MEC/XML) e melhoria contínua de produtos backend/desktop/web."
     ]
   },
   {
@@ -68,8 +68,8 @@
     "period": "set 2022 — dez 2022 (4 meses)",
     "location": "Recife, PE",
     "highlights": [
-      "Desafios reais com mentoria SiDi: soluções tecnológicas em equipe multidisciplinar.",
-      "Capacitação via cursos, bootcamps e mentorias alinhados ao mercado."
+      "Desafios reais de engenharia com mentoria SiDi em equipe multidisciplinar.",
+      "Capacitação aplicada a backend, integração e entrega de software."
     ]
   }
 ]

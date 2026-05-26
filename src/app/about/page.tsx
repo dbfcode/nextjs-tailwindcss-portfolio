@@ -9,9 +9,9 @@ import { profile, site } from "@/lib/portfolio";
 
 export const metadata: Metadata = {
   title:
-    "Sobre | Java Spring Boot Developer · APIs REST · Microsserviços · Mobile Web",
+    "Sobre | Especialista Java · Spring Boot · Backend · APIs REST · Microsserviços",
   description:
-    "Resumo profissional de Diego Ferreira — Engenheiro de Software, Java, Spring Boot, Node.js, NestJS, React, Next.js, iGaming, IA aplicada e experiência em Moovbet, Wee.BT e automação com OpenAI.",
+    "Diego Ferreira — Engenheiro de Software e Desenvolvedor Backend Java/Spring Boot. APIs REST, microsserviços, mobile full stack, iGaming, Cloud, Docker, AWS e IA aplicada.",
   keywords: site.keywords,
 };
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="relative h-48 w-48 shrink-0 overflow-hidden rounded-2xl border border-white/10">
           <Image
             src={profile.avatar}
-            alt={`${profile.name} — Java Spring Boot Developer`}
+            alt={`${profile.name} — Especialista Java e Backend Spring Boot`}
             fill
             className="object-cover"
             sizes="192px"

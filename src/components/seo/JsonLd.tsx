@@ -6,10 +6,11 @@ export function JsonLd() {
     "@type": "Person",
     name: profile.name,
     jobTitle: [
+      "Especialista Java",
       "Java Spring Boot Developer",
-      "Full Stack Developer",
-      "Mobile Web Developer",
       "Backend Developer",
+      "Full Stack Engineer",
+      "Mobile Full Stack Developer",
     ],
     description: site.description,
     url: site.url,
