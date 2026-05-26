@@ -10,7 +10,6 @@ export class AudioEngine {
 
   async init(): Promise<boolean> {
     if (typeof window === "undefined") return false;
-    if (this.ctx) return this.ctx.state === "running";
 
     const Ctx =
       window.AudioContext ||
@@ -18,10 +17,12 @@ export class AudioEngine {
         .webkitAudioContext;
     if (!Ctx) return false;
 
-    this.ctx = new Ctx();
-    this.master = this.ctx.createGain();
-    this.master.gain.value = this.volume;
-    this.master.connect(this.ctx.destination);
+    if (!this.ctx) {
+      this.ctx = new Ctx();
+      this.master = this.ctx.createGain();
+      this.master.gain.value = this.volume;
+      this.master.connect(this.ctx.destination);
+    }
 
     try {
       await this.ctx.resume();
@@ -36,7 +37,11 @@ export class AudioEngine {
   }
 
   async resume(): Promise<void> {
-    await this.ctx?.resume();
+    if (!this.ctx) {
+      await this.init();
+      return;
+    }
+    await this.ctx.resume();
   }
 
   setVolume(level: number): void {
@@ -51,7 +56,12 @@ export class AudioEngine {
   }
 
   startAmbient(): void {
-    if (!this.ctx || !this.master || this.ambient) return;
+    if (!this.ctx || !this.master) return;
+
+    if (this.ambient) {
+      this.ambient.stop();
+      this.ambient = null;
+    }
 
     const ctx = this.ctx;
     const now = ctx.currentTime;
@@ -97,6 +107,7 @@ export class AudioEngine {
 
     this.ambient = {
       stop: () => {
+        this.ambient = null;
         const t = ctx.currentTime;
         ambientGain.gain.cancelScheduledValues(t);
         ambientGain.gain.setValueAtTime(ambientGain.gain.value, t);
@@ -111,13 +122,13 @@ export class AudioEngine {
           filter.disconnect();
           ambientGain.disconnect();
         }, 950);
-        this.ambient = null;
       },
     };
   }
 
   stopAmbient(): void {
     this.ambient?.stop();
+    this.ambient = null;
   }
 
   private tone(
