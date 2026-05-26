@@ -16,7 +16,7 @@ type SoundContextValue = {
   isPlaying: boolean;
   needsUnlock: boolean;
   showHint: boolean;
-  toggle: () => void;
+  toggle: () => Promise<void>;
   unlock: () => Promise<void>;
   playHover: () => void;
   playClick: () => void;
@@ -30,46 +30,49 @@ export function SoundProvider({ children }: { children: React.ReactNode }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [needsUnlock, setNeedsUnlock] = useState(false);
   const [showHint, setShowHint] = useState(true);
-  const startedRef = useRef(false);
+  const enabledRef = useRef(true);
 
-  const startAudio = useCallback(async () => {
+  const enableSound = useCallback(async () => {
     const ok = await audioEngine.init();
     if (!ok) {
       setNeedsUnlock(true);
+      setIsPlaying(false);
       return false;
     }
-    audioEngine.setMuted(!enabled);
-    if (enabled) {
-      audioEngine.startAmbient();
-      setIsPlaying(true);
-      setNeedsUnlock(false);
-    }
+    audioEngine.setMuted(false);
+    audioEngine.startAmbient();
+    setIsPlaying(true);
+    setNeedsUnlock(false);
     return true;
+  }, []);
+
+  const disableSound = useCallback(() => {
+    audioEngine.setMuted(true);
+    audioEngine.stopAmbient();
+    setIsPlaying(false);
+  }, []);
+
+  useEffect(() => {
+    enabledRef.current = enabled;
   }, [enabled]);
 
   useEffect(() => {
-    if (startedRef.current) return;
-    startedRef.current = true;
-
-    void (async () => {
-      const ok = await startAudio();
-      if (!ok) setNeedsUnlock(true);
-    })();
+    void enableSound();
 
     const hintTimer = setTimeout(() => setShowHint(false), 5000);
 
-    const unlockOnGesture = async () => {
+    const unlockOnGesture = async (e: Event) => {
+      const target = e.target as HTMLElement | null;
+      if (target?.closest("[data-sound-control]")) return;
+
       await audioEngine.resume();
-      const running = await startAudio();
-      if (running) {
-        setNeedsUnlock(false);
-        window.removeEventListener("pointerdown", unlockOnGesture);
-        window.removeEventListener("keydown", unlockOnGesture);
+      if (enabledRef.current) {
+        await enableSound();
       }
     };
 
-    window.addEventListener("pointerdown", unlockOnGesture, { once: false });
-    window.addEventListener("keydown", unlockOnGesture, { once: false });
+    window.addEventListener("pointerdown", unlockOnGesture);
+    window.addEventListener("keydown", unlockOnGesture);
 
     return () => {
       clearTimeout(hintTimer);
@@ -77,41 +80,41 @@ export function SoundProvider({ children }: { children: React.ReactNode }) {
       window.removeEventListener("keydown", unlockOnGesture);
       audioEngine.dispose();
     };
-  }, [startAudio]);
+  }, [enableSound]);
 
-  useEffect(() => {
-    audioEngine.setMuted(!enabled);
-    if (enabled && audioEngine.isRunning && !isPlaying) {
-      audioEngine.startAmbient();
-      setIsPlaying(true);
+  const toggle = useCallback(async () => {
+    setShowHint(false);
+    const next = !enabledRef.current;
+
+    if (next) {
+      setEnabled(true);
+      enabledRef.current = true;
+      await enableSound();
+    } else {
+      setEnabled(false);
+      enabledRef.current = false;
+      disableSound();
     }
-    if (!enabled) {
-      audioEngine.stopAmbient();
-      setIsPlaying(false);
-    }
-  }, [enabled, isPlaying]);
+  }, [enableSound, disableSound]);
 
   const unlock = useCallback(async () => {
-    await audioEngine.resume();
-    await startAudio();
-  }, [startAudio]);
-
-  const toggle = useCallback(() => {
-    setEnabled((prev) => !prev);
     setShowHint(false);
-  }, []);
+    setEnabled(true);
+    enabledRef.current = true;
+    await enableSound();
+  }, [enableSound]);
 
   const playHover = useCallback(() => {
-    if (enabled && audioEngine.isRunning) audioEngine.playHover();
-  }, [enabled]);
+    if (enabledRef.current && audioEngine.isRunning) audioEngine.playHover();
+  }, []);
 
   const playClick = useCallback(() => {
-    if (enabled && audioEngine.isRunning) audioEngine.playClick();
-  }, [enabled]);
+    if (enabledRef.current && audioEngine.isRunning) audioEngine.playClick();
+  }, []);
 
   const playNavigate = useCallback(() => {
-    if (enabled && audioEngine.isRunning) audioEngine.playNavigate();
-  }, [enabled]);
+    if (enabledRef.current && audioEngine.isRunning) audioEngine.playNavigate();
+  }, []);
 
   const value = useMemo(
     () => ({

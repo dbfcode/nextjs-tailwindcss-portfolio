@@ -11,11 +11,17 @@ export function SoundIndicator() {
 
   const label = needsUnlock
     ? "Toque para ativar o som"
-    : enabled
-      ? isPlaying
-        ? "Som ambiente ligado"
-        : "Som ligado"
-      : "Som desligado";
+    : enabled && isPlaying
+      ? "Som ambiente ligado"
+      : enabled
+        ? "Som ligado"
+        : "Som desligado";
+
+  const handleClick = async (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (needsUnlock) await unlock();
+    else await toggle();
+  };
 
   return (
     <>
@@ -26,7 +32,7 @@ export function SoundIndicator() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.4 }}
-            className="pointer-events-none fixed left-1/2 top-20 z-[60] -translate-x-1/2"
+            className="pointer-events-none fixed left-1/2 top-20 z-40 -translate-x-1/2"
           >
             <div className="glass flex items-center gap-2 rounded-full px-4 py-2 text-xs text-muted shadow-lg">
               <span className="relative flex h-2 w-2">
@@ -41,37 +47,27 @@ export function SoundIndicator() {
 
       <motion.button
         type="button"
+        data-sound-control
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.6 }}
-        onClick={() => {
-          if (needsUnlock) void unlock();
-          else toggle();
-        }}
+        onClick={handleClick}
         className={cn(
-          "fixed bottom-5 right-5 z-[60] flex items-center gap-2.5 rounded-full glass px-3.5 py-2.5 text-xs font-medium shadow-lg transition-colors",
-          enabled && isPlaying
-            ? "text-cyan-300/90 border-cyan-500/20"
-            : "text-muted",
+          "fixed bottom-5 right-5 z-40 flex items-center gap-2 rounded-full border border-white/10 bg-background/75 px-3 py-2 text-xs font-medium text-muted shadow-md backdrop-blur-md transition-colors hover:border-white/20",
+          enabled && isPlaying && "border-cyan-500/15",
         )}
         aria-label={label}
+        aria-pressed={enabled && isPlaying}
         title={label}
       >
-        <span className="relative flex h-8 w-8 items-center justify-center rounded-full bg-white/5">
+        <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white/5">
           {enabled && isPlaying ? (
-            <>
-              <Volume2 size={16} className="relative z-10" />
-              <span className="sound-bar sound-bar-1 absolute bottom-2 left-1.5 h-2 w-0.5 rounded-full bg-cyan-400/80" />
-              <span className="sound-bar sound-bar-2 absolute bottom-2 left-2.5 h-3 w-0.5 rounded-full bg-violet-400/80" />
-              <span className="sound-bar sound-bar-3 absolute bottom-2 left-3.5 h-1.5 w-0.5 rounded-full bg-cyan-400/80" />
-            </>
+            <Volume2 size={15} className="text-cyan-400/80" />
           ) : (
-            <VolumeX size={16} />
+            <VolumeX size={15} />
           )}
         </span>
-        <span className="hidden sm:inline max-w-[9rem] leading-tight text-left">
-          {label}
-        </span>
+        <span className="hidden max-w-[7rem] leading-tight sm:inline">{label}</span>
       </motion.button>
     </>
   );
