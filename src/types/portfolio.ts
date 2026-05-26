@@ -110,3 +110,9 @@ export interface SiteConfig {
   url: string;
   nav: NavItem[];
 }
+
+export interface SkillsProfile {
+  competencies: string[];
+  deliverables: string[];
+  roles: string[];
+}

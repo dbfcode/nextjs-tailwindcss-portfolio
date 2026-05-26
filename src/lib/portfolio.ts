@@ -3,18 +3,21 @@ import profileData from "@/data/profile.json";
 import projectsData from "@/data/projects.json";
 import siteData from "@/data/site.json";
 import statsData from "@/data/stats.json";
+import skillsData from "@/data/skills.json";
 import type {
   BioParagraph,
   Profile,
   Project,
   SiteConfig,
   Stat,
+  SkillsProfile,
 } from "@/types/portfolio";
 
 export const site: SiteConfig = siteData;
 export const profile: Profile = profileData;
 export const about: BioParagraph[] = aboutData;
 export const stats: Stat[] = statsData;
+export const skills: SkillsProfile = skillsData;
 export const projects: Project[] = projectsData as Project[];
 
 export function getAllProjects(): Project[] {

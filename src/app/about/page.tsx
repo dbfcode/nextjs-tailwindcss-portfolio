@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { AboutBio } from "@/components/about/AboutBio";
+import { AboutSkills } from "@/components/about/AboutSkills";
 import { StatsBar } from "@/components/about/StatsBar";
 import { profile } from "@/lib/portfolio";
 
@@ -29,6 +30,7 @@ export default function AboutPage() {
         </div>
       </div>
       <AboutBio />
+      <AboutSkills />
       <StatsBar />
     </div>
   );
