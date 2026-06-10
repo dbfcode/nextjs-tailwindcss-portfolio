@@ -1,0 +1,915 @@
+[
+  {
+    "id": 1,
+    "slug": "bolsa-api-nest-arquitetura-modular",
+    "title": "API REST & microsserviços — NestJS/Node (padrões Spring Boot · Java)",
+    "url": "bolsa-api-nest-arquitetura-modular",
+    "category": "Backend · Java/Spring patterns · APIs REST · Microsserviços",
+    "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png",
+    "ProjectHeader": {
+      "title": "Bolsa API — Arquitetura Modulada com NestJS, Prisma, Docker e PostgreSQL",
+      "publishDate": "2025",
+      "tags": "API REST / Microsserviços / Backend / NestJS / PostgreSQL / Docker / JWT / Swagger / TDD"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-1",
+        "title": "Containers rodando no Docker Desktop",
+        "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/containers_docker.png"
+      },
+      {
+        "id": "item-2",
+        "title": "Swagger UI — Documentação da API",
+        "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/swagger_docs.png"
+      },
+      {
+        "id": "item-3",
+        "title": "Banco de dados PostgreSQL rodando em container Docker, visualizado via DBeaver (SGBD)",
+        "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/dbeaver_banco.png"
+      },
+      {
+        "id": "item-4",
+        "title": "Prisma Studio — Gráfico de bootstrap da api + banco + prisma studio via script.sh que inicializa ambiente dockerizado",
+        "img": "/images/NESTJS_API_AUTH_DOCKER_PRISMA/mermaid_graph.jpg"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-5",
+          "title": "Tipo",
+          "details": "API Backend REST para Simulador de Bolsa de Valores (Valorim)"
+        },
+        {
+          "id": "item-6",
+          "title": "Arquitetura",
+          "details": "Monolito Modular — módulos independentes e organizados por domínio"
+        },
+        {
+          "id": "item-7",
+          "title": "Banco de Dados",
+          "details": "PostgreSQL + Prisma ORM com Migrations e Seeds automáticos"
+        },
+        {
+          "id": "item-8",
+          "title": "Setup Dev",
+          "details": "Docker Compose para Dev e Prod + Scripts .sh/.bat para automação"
+        },
+        {
+          "id": "item-9",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "extra-bolsa-api-nest-arquitetura-modular",
+          "title": "Relevância profissional",
+          "details": "Base técnica para atuação como Java Spring Boot Developer e construtor de microsserviços em iGaming e SaaS."
+        }
+      ],
+      "ObjectivesHeading": "Propósito e Objetivo",
+      "ObjectivesDetails": "API backend modular e dockerizada para simulador de bolsa, modelada com práticas equivalentes a Java Spring Boot: domínios separados, injeção de dependência, DTOs, guards e documentação OpenAPI. Foco em autenticação JWT HttpOnly, Prisma/PostgreSQL, migrations, seeds e ambiente reproduzível para times backend.",
+      "Technologies": [
+        {
+          "title": "Stack backend & integração",
+          "techs": [
+            "API REST",
+            "Microsserviços modulares",
+            "NestJS / Node.js / TypeScript",
+            "PostgreSQL / Prisma ORM",
+            "JWT HttpOnly / Segurança de API",
+            "Docker / Docker Compose",
+            "Swagger OpenAPI 3",
+            "Padrões Spring Boot (camadas, módulos)"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Arquitetura, Autenticação e Ciclo de Desenvolvimento",
+      "ProjectDetails": [
+        {
+          "id": "item-10",
+          "details": "Backend production-ready com arquitetura orientada a domínio e operações DevOps: Autenticação avançada com JWT via Cookies HttpOnly: login envia o token em cookie httpOnly, Secure e SameSite, prevenindo XSS com token apenas em cookie HttpOnly e contrato de API seguro para canais web/mobile."
+        },
+        {
+          "id": "item-11",
+          "details": "Módulos de Users e Auth completamente implementados — incluindo decorators personalizados, guards (JwtAuth + Roles), CurrentUser, documentação com Swagger e responses totalmente tipadas."
+        },
+        {
+          "id": "item-12",
+          "details": "Arquitetura modular escalável: cada domínio (users, auth...) possui seu próprio controller, service e regras de negócio, dentro de um único monólito organizado."
+        },
+        {
+          "id": "item-13",
+          "details": "Setup de desenvolvimento profissional com Docker Compose: containers orquestrados (API, PostgreSQL, Prisma Studio), hot reload, healthchecks e volume para sincronização de código sem conflito."
+        },
+        {
+          "id": "item-14",
+          "details": "Scripts .sh/.bat inteligentes para Windows, Linux e Mac: criam .env automaticamente, rodam compose, aplicam migrations, executam seeds e validam o estado dos serviços."
+        },
+        {
+          "id": "item-15",
+          "details": "Prisma ORM com migrations, seeds e geração automática do client — garantindo consistência total entre ambiente local, staging e produção."
+        },
+        {
+          "id": "item-16",
+          "details": "Documentação completa com Swagger, incluindo respostas 200/400/401/403/404, exemplos detalhados e rotas separadas por módulo."
+        },
+        {
+          "id": "item-17",
+          "details": "Ciclo de Dev otimizado: rodar `./setup-dev.sh` ou `setup-dev.bat` inicia todo o ambiente com um clique — ideal para times iniciantes ou onboarding rápido."
+        }
+      ],
+      "SocialSharing": [
+        {
+          "id": "item-18",
+          "name": "GitHub",
+          "githubRepo": "bolsa-api-nest"
+        }
+      ]
+    },
+    "repositoryRepo": "bolsa-Node.js-NestJS-back-end"
+  },
+  {
+    "id": 2,
+    "slug": "autenticacao-nextjs-react-cookie-httponly",
+    "title": "Auth & API REST — backend NestJS + integração mobile/web full stack",
+    "url": "autenticacao-nextjs-react-cookie-httponly",
+    "category": "Backend · API REST · Full Stack · Segurança",
+    "img": "/images/solo-login/login-desktop.png",
+    "projectLink": "https://login-cadastro-react-next-atomic.vercel.app/",
+    "ProjectHeader": {
+      "title": "Autenticação com Cookies HttpOnly – React/Next + NestJS",
+      "publishDate": "2025",
+      "tags": "API REST / Backend / NestJS / JWT / Microsserviços / Mobile Full Stack / PostgreSQL"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-19",
+        "title": "Tela de Login (Mobile)",
+        "img": "/images/solo-login/login-mobile.png"
+      },
+      {
+        "id": "item-20",
+        "title": "Tela de Login (Desktop)",
+        "img": "/images/solo-login/login-desktop.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-21",
+          "title": "Tipo",
+          "details": "Módulo de Autenticação com Cookies HttpOnly"
+        },
+        {
+          "id": "item-22",
+          "title": "Stack Principal",
+          "details": "Next.js, React, NestJS, PostgreSQL, JWT Cookies"
+        },
+        {
+          "id": "item-23",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-24",
+          "title": "Padrão de UI",
+          "details": "Padrão de integração: API REST + camadas de serviço (backend-first)"
+        },
+        {
+          "id": "extra-autenticacao-nextjs-react-cookie-httponly",
+          "title": "Contexto",
+          "details": "Integrações auth/sessão similares às implementadas em Moovbet e produtos iGaming."
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Módulo de autenticação corporativa: API REST NestJS com JWT em cookies HttpOnly e cliente mobile/web full stack consumindo contratos tipados. Demonstra integração segura back-end ↔ canais digitais, regras de sessão e validação — competências centrais de Desenvolvedor Backend Java/Spring Boot em ecossistemas Node.",
+      "Technologies": [
+        {
+          "title": "Stack backend-first",
+          "techs": [
+            "API REST / NestJS",
+            "JWT / Cookies HttpOnly",
+            "PostgreSQL / Prisma",
+            "TypeScript",
+            "Integração mobile web full stack",
+            "Segurança de API"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Arquitetura, Segurança e Componentização",
+      "ProjectDetails": [
+        {
+          "id": "item-25",
+          "details": "Segurança e contratos de API em produção: Autenticação com Cookies HttpOnly: o login envia email e senha para a API NestJS, que devolve um JWT dentro de um cookie HttpOnly, Secure e SameSite. O cookie não pode ser acessado via JavaScript, protegendo o usuário contra ataques XSS."
+        },
+        {
+          "id": "item-26",
+          "details": "Arquitetura backend-first: autenticação e regras de sessão na API REST (fluxo, requisições, estados), deixando a UI limpa nas Molecules e Atoms. Nenhum token é salvo em localStorage ou sessionStorage."
+        },
+        {
+          "id": "item-27",
+          "details": "API preparada para BFF e evolução de sessão server-side sem reescrever contratos para Server Actions sem reescrever UI, apenas movendo a lógica de autenticação do Organism para a camada de servidor."
+        },
+        {
+          "id": "item-28",
+          "details": "Validação de entrada, DTOs e respostas tipadas na API; fluxos login, recovery e reset expostos via REST."
+        },
+        {
+          "id": "item-29",
+          "details": "Integração real com API: login, refresh, validações e retorno estruturado seguindo melhores práticas REST, com estados loading/error e fallback UI."
+        },
+        {
+          "id": "item-30",
+          "details": "Segurança aprimorada: JWT somente no cookie HttpOnly, prevenção contra XSS, maior compatibilidade com SSR, e base estruturada para implementar rotas protegidas server-side futuramente."
+        }
+      ],
+      "SocialSharing": [
+        {
+          "id": "item-31",
+          "name": "GitHub",
+          "githubRepo": "Login-Cadastro-React-Next-Atomic"
+        }
+      ]
+    },
+    "repositoryRepo": "Login-Cadastro-React-Next-Atomic"
+  },
+  {
+    "id": 3,
+    "slug": "streamhub-plataforma-streaming",
+    "title": "Plataforma full stack — backend de dados, API OMDB, performance (iGaming)",
+    "url": "streamhub-plataforma-streaming",
+    "category": "Full Stack · Backend de integração · iGaming",
+    "img": "/images/streamhub/streamhub-portfolio.png",
+    "projectLink": "https://streamhub-reactjs-nextjs-plataform-1ve71j6xo-dig-ies-projects.vercel.app/",
+    "ProjectHeader": {
+      "title": "StreamHub - Plataforma de Streaming",
+      "publishDate": "Dez 2024",
+      "tags": "API REST / Backend integration / Full Stack / Performance / iGaming / PostgreSQL patterns"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-32",
+        "title": "StreamHub - Catálogo",
+        "img": "/images/streamhub/desktop.png"
+      },
+      {
+        "id": "item-33",
+        "title": "StreamHub - Mobile",
+        "img": "/images/streamhub/mobile.png"
+      },
+      {
+        "id": "item-34",
+        "title": "StreamHub - Tradução vindo desde o servidor (melhor SEO)",
+        "img": "/images/streamhub/SSR_TRANSLATION.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-35",
+          "title": "Tipo",
+          "details": "Plataforma de Streaming"
+        },
+        {
+          "id": "item-36",
+          "title": "Stack Principal",
+          "details": "Next.js 15, React 19, TypeScript"
+        },
+        {
+          "id": "item-37",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-38",
+          "title": "Licença",
+          "details": "MIT License"
+        },
+        {
+          "id": "extra-streamhub-plataforma-streaming",
+          "title": "Resultados (referência CV)",
+          "details": "Performance, SEO orgânico e experiência fluida para alta demanda e retenção de usuários."
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Sistema full stack com camada de integração robusta à API OMDB, cache e paginação no servidor/cliente, e entrega ponta a ponta em ambiente de alta demanda (iGaming). Case alinhado à atuação em Moovbet: ganhos de performance de sistema (+70%), confiabilidade de APIs e escala — não como projeto de UI, mas como produto full stack com backend de dados e SEO técnico como requisito de negócio.",
+      "Technologies": [
+        {
+          "title": "Backend, integração e full stack",
+          "techs": [
+            "Integração API REST (OMDB)",
+            "Cache e paginação",
+            "TypeScript / Node ecosystem",
+            "Performance / escalabilidade",
+            "iGaming / alta demanda",
+            "Full Stack Engineer"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Desafios e Soluções",
+      "ProjectDetails": [
+        {
+          "id": "item-39",
+          "details": "Engenharia de sistema e integração: Performance & Otimização: Implementação de lazy loading com infinite scroll usando React Query, paginação inteligente com caching estratégico da API OMDB, geração de páginas estáticas (SSR/SSG) para 23 idiomas, otimização de imagens com Next/Image e code splitting com dynamic imports e chunking automático."
+        },
+        {
+          "id": "item-40",
+          "details": "Agregação de dados OMDB com cache, paginação e tratamento de erros de API; arquitetura modular de serviços e entrega full stack para iGaming."
+        },
+        {
+          "id": "item-41",
+          "details": "Internacionalização de dados e metadados para SEO de plataforma (requisito de negócio), traduções carregadas no servidor (SSR Translations), otimização SEO multilíngue para buscadores em todos os idiomas, e auto-detecção de locale baseado no navegador do usuário."
+        },
+        {
+          "id": "item-42",
+          "details": "Arquitetura: Implementação da nova arquitetura App Router do Next.js 15, type safety completo com TypeScript em toda aplicação, data fetching otimizado com React Query e cache inteligente, integração robusta com API OMDB incluindo tratamento completo de erros. O projeto segue boas práticas como Clean Code, princípios SOLID, camadas de serviço, resiliência em integrações e monitoramento de falhas de API e performance monitoring ready."
+        }
+      ]
+    },
+    "video": {
+      "src": "/videos/streamhub-demo.mp4",
+      "webm": "/videos/streamhub-demo.webm",
+      "poster": "/images/streamhub/streamhub-portfolio.png",
+      "title": "StreamHub em execução — demonstração da plataforma"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "cadastro-login-pagina-usuario-aplicacao-react",
+    "title": "Autenticação — integração com BaaS e contratos de sessão (mobile web)",
+    "url": "cadastro-login-pagina-usuario-aplicacao-react",
+    "category": "Full Stack · Autenticação · Mobile Web",
+    "img": "/images/react-auth-ui-firebase/react-auth-ui-firebase.png",
+    "projectLink": "https://react-registration-login-user-home-home.vercel.app/",
+    "ProjectHeader": {
+      "title": "Cadastro, Login e Página do Usuário - Aplicação React",
+      "publishDate": "2024",
+      "tags": "API REST / Autenticação / Mobile Full Stack / Backend-as-a-Service / Integração"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-43",
+        "title": "Página do Usuário",
+        "img": "/images/react-auth-ui-firebase/homepage.png"
+      },
+      {
+        "id": "item-44",
+        "title": "Página de Cadastro",
+        "img": "/images/react-auth-ui-firebase/user_created.jpg"
+      },
+      {
+        "id": "item-45",
+        "title": "Página de Login",
+        "img": "/images/react-auth-ui-firebase/logged_in_page.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-46",
+          "title": "Tipo",
+          "details": "Sistema de Autenticação"
+        },
+        {
+          "id": "item-47",
+          "title": "Stack Principal",
+          "details": "React, Firebase Auth, React Router Dom"
+        },
+        {
+          "id": "item-48",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-49",
+          "title": "Deploy",
+          "details": "Vercel"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Fluxo de autenticação e gestão de sessão em produto mobile web, integrando serviço de identidade em nuvem (Firebase Auth) com regras de validação e roteamento protegido. Estudo de integração backend/serviços externos que precede a stack corporativa Java Spring Boot e APIs REST próprias.",
+      "Technologies": [
+        {
+          "title": "Integração & autenticação",
+          "techs": [
+            "Autenticação / Sessão",
+            "API & serviços em nuvem",
+            "Mobile Full Stack",
+            "Validação de dados"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Funcionalidades e Aprendizados",
+      "ProjectDetails": [
+        {
+          "id": "item-50",
+          "details": "Integração e regras de negócio de autenticação: Formulários com React Hook Form: Implementação de controle eficiente do estado dos inputs, melhorando a performance e facilitando a gestão de formulários complexos com múltiplos campos de validação."
+        },
+        {
+          "id": "item-51",
+          "details": "Validação com Yup: Sistema de validação baseado em esquemas de dados, garantindo que os dados de cadastro e login estejam corretos antes de serem enviados ao Firebase, com mensagens de erro claras e intuitivas para o usuário."
+        },
+        {
+          "id": "item-52",
+          "details": "Autenticação com Firebase: Integração completa com Firebase Authentication para cadastro e login de usuários, armazenamento seguro de credenciais na nuvem e gerenciamento de sessões de autenticação."
+        },
+        {
+          "id": "item-53",
+          "details": "Navegação com React Router Dom: Implementação de rotas declarativas entre páginas (Home, Cadastro, Login e Página do Usuário), protegendo rotas autenticadas e redirecionando usuários conforme seu estado de autenticação."
+        },
+        {
+          "id": "item-54",
+          "details": "Reutilização de Componentes: Criação e reaproveitamento de componentes com styled-components, seguindo o design do protótipo Figma da DIO e mantendo consistência visual em toda a aplicação."
+        }
+      ],
+      "SocialSharingHeading": "Deploy"
+    },
+    "repositoryRepo": "react-registration-login-userHome-home"
+  },
+  {
+    "id": 5,
+    "slug": "mini-erp-crm-php-mysql-rabbitmq-asaas",
+    "title": "ERP/CRM — backend PHP, filas, microsserviços e gateway de pagamento",
+    "url": "mini-erp-crm-php-mysql-rabbitmq-asaas",
+    "category": "Backend · APIs REST · Microsserviços · Full Stack",
+    "img": "/images/PHP_CRM_ERP/dashboard.png",
+    "projectLink": null,
+    "ProjectHeader": {
+      "title": "Mini ERP/CRM em PHP 8 + MySQL + RabbitMQ + Asaas",
+      "publishDate": "2024",
+      "tags": "Backend / API REST / Microsserviços / RabbitMQ / MySQL / Docker / Integrações"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-55",
+        "title": "Dashboard ERP",
+        "img": "/images/PHP_CRM_ERP/dashboard.png"
+      },
+      {
+        "id": "item-56",
+        "title": "Asaas - gateway",
+        "img": "/images/PHP_CRM_ERP/asaas.jpg"
+      },
+      {
+        "id": "item-57",
+        "title": "Login",
+        "img": "/images/PHP_CRM_ERP/charge_edit.png"
+      },
+      {
+        "id": "item-58",
+        "title": "Cadastro de Clientes",
+        "img": "/images/PHP_CRM_ERP/customer_edit.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-59",
+          "title": "Tipo",
+          "details": "Mini ERP/CRM com Cobranças Asaas e Filas"
+        },
+        {
+          "id": "item-60",
+          "title": "Stack Principal",
+          "details": "PHP 8, MySQL, RabbitMQ, Docker"
+        },
+        {
+          "id": "item-61",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-62",
+          "title": "Integrações",
+          "details": "Asaas API, RabbitMQ Worker"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Mini ERP/CRM com backend em camadas (MVC), APIs de cobrança Asaas, mensageria RabbitMQ e worker assíncrono — modelo próximo a sistemas Java/Spring com filas, integrações e persistência relacional em produção.",
+      "Technologies": [
+        {
+          "title": "Backend, filas e integrações",
+          "techs": [
+            "PHP 8 / Backend em camadas",
+            "API REST / Integrações Asaas",
+            "RabbitMQ / Event-driven",
+            "MySQL / PDO",
+            "Docker / Microsserviços"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Arquitetura, Funcionalidades e Desafios",
+      "ProjectDetails": [
+        {
+          "id": "item-63",
+          "details": "Arquitetura backend e eventos: Arquitetura em camadas com MVC enxuto: Controllers para lógica de fluxo (Auth, Client, Order, Payment), Models com PDO, Services para integrações externas (Asaas), Queue Publisher para RabbitMQ e worker separado para consumo de eventos."
+        },
+        {
+          "id": "item-64",
+          "details": "Integração completa com Asaas API: criação automática de clientes, geração de cobranças (PIX, Boleto, Cartão), persistência dos dados retornados (invoiceUrl, pixQrCode, bankSlipUrl)."
+        },
+        {
+          "id": "item-65",
+          "details": "RabbitMQ para processamento assíncrono: publicação do evento 'order.created' ao criar pedido, exchange de tópico 'orders', worker consumidor (bin/worker.php) processando mensagens e simulando ações como envio de e-mail e atualização de estoque."
+        },
+        {
+          "id": "item-66",
+          "details": "Autenticação com PHP nativo usando sessões, seções privadas protegidas por middleware simples e seed inicial de usuário admin (email: admin@example.com / senha: admin123)."
+        },
+        {
+          "id": "item-67",
+          "details": "Ambiente totalmente containerizado: Docker Compose orquestra PHP+Apache, MySQL, RabbitMQ e worker PHP dedicado. Facilita desenvolvimento, logs centralizados e isolamento de serviços."
+        },
+        {
+          "id": "item-68",
+          "details": "Foco educacional em integrações: filas, webhooks futuros, eventos assíncronos, reconciliação de pagamentos e boas práticas na comunicação entre serviços dentro de um mini ecossistema distribuído."
+        }
+      ],
+      "SocialSharingHeading": "Demonstração",
+      "SocialSharing": [
+        {
+          "id": "item-69",
+          "name": "Repositório no GitHub",
+          "githubRepo": "mini-erp-crm-php-mysql-rabbitmq-asaas"
+        }
+      ]
+    },
+    "repositoryRepo": "PHP-Mini-ERP-CRM-8-Apache-MySQL-RabbitMQ"
+  },
+  {
+    "id": 6,
+    "slug": "gitfind",
+    "title": "Consumo de API REST pública — estudo de integração backend",
+    "url": "gitfind",
+    "category": "Backend · API REST · Integração",
+    "img": "/images/gitfind/gitfind_after_search.png",
+    "ProjectHeader": {
+      "title": "GitFind",
+      "publishDate": "2024",
+      "tags": "API REST / Backend integration / JavaScript / GitHub API"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-70",
+        "title": "GitFind - Tela Inicial",
+        "img": "/images/gitfind/home_before_search.png"
+      },
+      {
+        "id": "item-71",
+        "title": "GitFind - Busca de Usuário",
+        "img": "/images/gitfind/home_after_search.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-72",
+          "title": "Tipo",
+          "details": "Busca de Usuários GitHub"
+        },
+        {
+          "id": "item-73",
+          "title": "Stack Principal",
+          "details": "React 17, Create React App, JavaScript"
+        },
+        {
+          "id": "item-74",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-75",
+          "title": "Deploy",
+          "details": "GitHub Pages"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Estudo de integração com API REST externa (GitHub), agregação de dados e exposição ao cliente — base de competências para backends Java/Spring Boot e BFFs.",
+      "Technologies": [
+        {
+          "title": "Integração API REST",
+          "techs": [
+            "API REST",
+            "GitHub API",
+            "Agregação de dados",
+            "Backend patterns"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Características e Objetivo Educacional",
+      "ProjectDetails": [
+        {
+          "id": "item-76",
+          "details": "Integração e modelagem de resposta: Padrões Antigos Intencionais: O código adota padrões anteriores à popularização de Hooks, TypeScript e CSS-in-JS, como estrutura baseada em arquivos `.js` e `.css` separados, componentes funcionais simples (sem Hooks modernos), estilos globais e importações diretas (`import './App.css'`), nenhum uso de TypeScript (`.tsx`) ou Tailwind/styled-components, e build configurado via Create React App (CRA)."
+        },
+        {
+          "id": "item-77",
+          "details": "Consumo da API do GitHub: Aplicação que consome a API pública do GitHub, listando o usuário e seus repositórios com base no username informado. Implementa busca de perfil de usuário e listagem completa de repositórios públicos associados ao perfil pesquisado."
+        },
+        {
+          "id": "item-78",
+          "details": "Objetivo Educacional e Histórico: Este repositório funciona como uma pequena cápsula do tempo dentro do ecossistema React — útil para quem quer compreender como surgiram conceitos que hoje damos como padrão: modularização de componentes, importação de estilos locais, estrutura de build do CRA e evolução até o uso de Hooks, TS e Vite/Next."
+        },
+        {
+          "id": "item-79",
+          "details": "Projeto de Estudo Técnico: Criado por curiosidade técnica e estudo histórico, com o objetivo de entender o fluxo e as limitações dessas abordagens antigas. O projeto demonstra como eram construídas aplicações React antes da era moderna, servindo como referência comparativa para entender a evolução do ecossistema."
+        }
+      ],
+      "SocialSharingHeading": "Deploy"
+    },
+    "repositoryRepo": "React-gitFind",
+    "githubPagesRepo": "React-gitFind"
+  },
+  {
+    "id": 7,
+    "slug": "pokedex-com-pokeapi",
+    "title": "API REST PokeAPI — cache, debounce e otimização de chamadas",
+    "url": "pokedex-com-pokeapi",
+    "category": "Backend patterns · API REST · Mobile Web",
+    "img": "/images/pokedex.png",
+    "ProjectHeader": {
+      "title": "Pokédex com PokeAPI",
+      "publishDate": "Jan 2024",
+      "tags": "API REST / Cache / Performance / Integração / Mobile Full Stack"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-80",
+        "title": "Pokédex - Lista de Pokémon",
+        "img": "/images/web-project-1.jpg"
+      },
+      {
+        "id": "item-81",
+        "title": "Pokédex - Busca Flexível",
+        "img": "/images/ui-project-2.jpg"
+      },
+      {
+        "id": "item-82",
+        "title": "Pokédex - Mobile View",
+        "img": "/images/mobile-project-1.jpg"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-83",
+          "title": "Tipo",
+          "details": "Pokédex Interativa"
+        },
+        {
+          "id": "item-84",
+          "title": "Stack Principal",
+          "details": "HTML5, CSS3, JavaScript ES6+"
+        },
+        {
+          "id": "item-85",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-86",
+          "title": "Deploy",
+          "details": "GitHub Pages"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Laboratório de consumo intensivo de API REST com cache em memória, debounce e paginação — técnicas aplicadas em backends e BFFs Java/Node para reduzir carga e latência.",
+      "Technologies": [
+        {
+          "title": "API REST & performance de integração",
+          "techs": [
+            "API REST",
+            "Cache",
+            "Debounce",
+            "Paginação",
+            "Otimização de rede"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Funcionalidades e Otimizações",
+      "ProjectDetails": [
+        {
+          "id": "item-87",
+          "details": "Otimização de integração com API: Busca Flexível em Tempo Real: Sistema de pesquisa com correspondência parcial do nome (case-insensitive), buscando substrings para encontrar Pokémon mesmo com digitação parcial. Exemplo: digitando 'pika' encontra 'pikachu', digitando 'char' encontra 'charmander', 'charmeleon' e 'charizard'. Implementado com limite de 20 resultados para otimização."
+        },
+        {
+          "id": "item-88",
+          "details": "Cache Inteligente: Sistema de cache em memória para melhorar performance, armazenando a lista completa de Pokémon após a primeira busca. Reduz requisições desnecessárias à API e melhora significativamente a velocidade das buscas subsequentes. Cache persiste durante toda a sessão do usuário."
+        },
+        {
+          "id": "item-89",
+          "details": "Debounce Implementation: Sistema de debounce com delay de 300ms para otimizar requisições. Aguarda o usuário parar de digitar por 300ms antes de processar a busca, cancela requisições pendentes se o usuário continuar digitando e restaura a lista imediatamente quando o campo é limpo."
+        },
+        {
+          "id": "item-90",
+          "details": "Paginação e Carregamento Progressivo: Listagem paginada de Pokémon com carregamento inicial de 5 itens e botão 'Carregar +' para carregamento incremental sob demanda. Interface responsiva adaptável com Bootstrap e CSS customizado. Lazy loading de detalhes - busca informações completas apenas dos Pokémon filtrados, reduzindo tráfego de rede."
+        }
+      ],
+      "SocialSharingHeading": "Deploy"
+    },
+    "repositoryRepo": "pokedex-JAVASCRIPT-CSS-HTML-API-pokemon",
+    "githubPagesRepo": "pokedex-JAVASCRIPT-CSS-HTML-API-pokemon"
+  },
+  {
+    "id": 8,
+    "slug": "portfolio-mobile-first-javascript",
+    "title": "Portfólio mobile full stack — API GitHub + dados estáticos",
+    "url": "portfolio-mobile-first-javascript",
+    "category": "Mobile Full Stack · API REST",
+    "img": "/images/trilha-js-portfolio/desktop.png",
+    "ProjectHeader": {
+      "title": "Portfólio Mobile First JavaScript",
+      "publishDate": "2024",
+      "tags": "Mobile Full Stack / API REST / GitHub API / Integração backend"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-91",
+        "title": "Portfólio - Tela Mobile",
+        "img": "/images/trilha-js-portfolio/mobile.png"
+      },
+      {
+        "id": "item-92",
+        "title": "Portfólio - Tela Mobile",
+        "img": "/images/trilha-js-portfolio/mobile-open.png"
+      },
+      {
+        "id": "item-93",
+        "title": "Portfólio - Tela Desktop",
+        "img": "/images/trilha-js-portfolio/desktop.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-94",
+          "title": "Tipo",
+          "details": "Portfólio Pessoal Mobile First"
+        },
+        {
+          "id": "item-95",
+          "title": "Stack Principal",
+          "details": "HTML5, CSS3, JavaScript ES6+"
+        },
+        {
+          "id": "item-96",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        },
+        {
+          "id": "item-97",
+          "title": "Deploy",
+          "details": "GitHub Pages"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "Produto mobile-first alimentado por API REST (GitHub) e JSON estático — precedente da evolução para engenharia full stack com foco Java, Spring Boot e microsserviços.",
+      "Technologies": [
+        {
+          "title": "Integração & mobile full stack",
+          "techs": [
+            "API REST",
+            "GitHub API",
+            "Mobile Full Stack",
+            "Dados estáticos"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Funcionalidades e Detalhes Técnicos",
+      "ProjectDetails": [
+        {
+          "id": "item-98",
+          "details": "Integração de dados e entrega full stack: Layout Mobile First: Todo o design e estrutura da aplicação foi pensado para priorizar telas pequenas, garantindo fluidez e responsividade em dispositivos móveis antes da adaptação para telas maiores."
+        },
+        {
+          "id": "item-99",
+          "details": "Consumo da API do GitHub: Informações como repositórios e detalhes públicos são carregados dinamicamente via Fetch API, exibindo dados reais do perfil do GitHub."
+        },
+        {
+          "id": "item-100",
+          "details": "Integração com profile.json: Parte das informações pessoais e profissionais é carregada de um arquivo JSON local, demonstrando manipulação e integração de dados estáticos."
+        },
+        {
+          "id": "item-101",
+          "details": "Estrutura Simples e Performática: Sem dependências, sem frameworks, totalmente construído com JavaScript puro, CSS modularizado e HTML semântico."
+        }
+      ],
+      "SocialSharingHeading": "Demonstração",
+      "SocialSharing": [
+        {
+          "id": "item-102",
+          "name": "GitHub Pages",
+          "githubPagesRepo": "trilha-js-portfolio"
+        }
+      ]
+    },
+    "repositoryRepo": "trilha-js-portfolio",
+    "githubPagesRepo": "trilha-js-portfolio"
+  },
+  {
+    "id": 9,
+    "slug": "crud-console-linguagem-c",
+    "title": "CRUD em C — fundamentos de backend e estruturas de dados",
+    "url": "crud-console-linguagem-c",
+    "category": "Formação · Backend · Lógica",
+    "img": "/images/linguagem_c/linguagem_c_crud_console.png",
+    "ProjectHeader": {
+      "title": "CRUD de Anotações no Console em Linguagem C",
+      "publishDate": "1º período da faculdade",
+      "tags": "C / CRUD / Estruturas de dados / Backend fundamentals"
+    },
+    "ProjectImages": [
+      {
+        "id": "item-103",
+        "title": "Menu principal do CRUD no console",
+        "img": "/images/linguagem_c/linguagem_c_crud_console.png"
+      },
+      {
+        "id": "item-104",
+        "title": "Criação e listagem de anotações no console",
+        "img": "/images/linguagem_c/crud_linguagem_c_console.png"
+      }
+    ],
+    "ProjectInfo": {
+      "ClientHeading": "Sobre o Projeto",
+      "CompanyInfo": [
+        {
+          "id": "item-105",
+          "title": "Tipo",
+          "details": "Aplicação CRUD em Console"
+        },
+        {
+          "id": "item-106",
+          "title": "Linguagem",
+          "details": "Linguagem C"
+        },
+        {
+          "id": "item-107",
+          "title": "Contexto",
+          "details": "Projeto acadêmico — avaliação final da disciplina"
+        },
+        {
+          "id": "item-108",
+          "title": "IDE",
+          "details": "Replit"
+        },
+        {
+          "id": "item-109",
+          "title": "Autor",
+          "details": "Diêgo Ferreira"
+        }
+      ],
+      "ObjectivesHeading": "Objetivo",
+      "ObjectivesDetails": "CRUD procedural em C reforçando estruturas de dados, persistência em memória e fluxo de negócio — base da formação até Análise de Sistemas e especialização Java/Spring Boot.",
+      "Technologies": [
+        {
+          "title": "Fundamentos de engenharia",
+          "techs": [
+            "C",
+            "CRUD",
+            "Structs/Vetores",
+            "Lógica de backend"
+          ]
+        }
+      ],
+      "ProjectDetailsHeading": "Funcionalidades e Conceitos Aplicados",
+      "ProjectDetails": [
+        {
+          "id": "item-110",
+          "details": "Fundamentos aplicados: CRUD completo no console, implementado integralmente em Linguagem C, contemplando criação, listagem, edição e remoção de anotações por meio de um menu interativo, reforçando fundamentos clássicos de aplicações baseadas em fluxo."
+        },
+        {
+          "id": "item-111",
+          "details": "Fluxo sequencial e determinístico: o usuário seleciona a operação desejada, informa o título da anotação e em seguida sua descrição, exercitando leitura de entrada, validação básica e controle preciso da execução."
+        },
+        {
+          "id": "item-112",
+          "details": "Aplicação intensiva de lógica de programação, utilizando estruturas de controle como if/else, switch e laços de repetição (for, while), fortalecendo o raciocínio algorítmico e a tomada de decisão."
+        },
+        {
+          "id": "item-113",
+          "details": "Manipulação direta de estruturas (struct) e vetores para armazenamento temporário das anotações em memória, consolidando conceitos fundamentais de estruturas de dados e organização de registros."
+        },
+        {
+          "id": "item-114",
+          "details": "Projeto desenvolvido com foco em programação procedural/estruturada em C, clareza de código e separação lógica em funções, servindo como base sólida para estudos futuros em algoritmos, estruturas de dados e sistemas de mais baixo nível."
+        }
+      ],
+      "SocialSharing": [
+        {
+          "id": "item-115",
+          "name": "GitHub",
+          "url": ""
+        }
+      ]
+    }
+  }
+]

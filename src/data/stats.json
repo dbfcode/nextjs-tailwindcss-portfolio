@@ -1,0 +1,6 @@
+[
+  { "id": "experience", "label": "Anos em backend & sistemas", "value": 3, "suffix": "+" },
+  { "id": "igaming", "label": "Ganho de performance (sistema)", "value": 70, "suffix": "%" },
+  { "id": "apis", "label": "Projetos com API REST", "value": 9, "suffix": "" },
+  { "id": "stack", "label": "Foco Java / Spring Boot", "value": 1, "suffix": "º" }
+]

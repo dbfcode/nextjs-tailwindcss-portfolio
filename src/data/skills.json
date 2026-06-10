@@ -1,0 +1,51 @@
+{
+  "competencies": [
+    "Especialista Java / Spring Boot / Backend",
+    "APIs REST / Microsserviços / Integrações / BFF",
+    "PostgreSQL / SQL / Modelagem de Dados / MongoDB / Redis",
+    "Cloud / AWS / Docker / Kubernetes / CI/CD / Deploy",
+    "Node.js / NestJS / TypeScript (stack complementar)",
+    "C# / ASP.NET / .NET (backoffice e APIs)",
+    "Mobile Full Stack / Entrega ponta a ponta",
+    "IA aplicada / OpenAI / Automação / Chatbots",
+    "TDD / Jest / Testes unitários e de integração",
+    "Performance de sistema / Escalabilidade / iGaming",
+    "Clean Code / SOLID / Arquitetura em camadas",
+    "Scrum / Kanban / Metodologias ágeis"
+  ],
+  "softSkills": [
+    "Capacidade de autogestão",
+    "Pensamento crítico",
+    "Equipes multidisciplinares",
+    "Boa comunicação",
+    "Mentalidade de ownership",
+    "Alta capacidade de aprendizado",
+    "Engenharia orientada ao negócio",
+    "Colaboração remota eficiente"
+  ],
+  "deliverables": [
+    "APIs REST e microsserviços em produção",
+    "Backends Java/Spring Boot e Node/NestJS",
+    "Modelagem de dados e SQL performático",
+    "Integrações (pagamentos, filas, CRM, WhatsApp)",
+    "Pipelines CI/CD, testes e qualidade (TDD)",
+    "Produtos mobile web full stack integrados ao backend",
+    "Automação com IA e redução de custo operacional"
+  ],
+  "roles": [
+    "Especialista Java",
+    "Java Spring Boot Developer",
+    "Desenvolvedor Backend",
+    "Engenheiro de Software",
+    "Full Stack Engineer",
+    "Mobile Full Stack",
+    "API REST & Microsserviços",
+    "iGaming / Sistemas de alta demanda"
+  ],
+  "certifications": [
+    "SCRUM FOUNDATION PROFESSIONAL CERTIFICATE (SFPC)",
+    "Bootcamp CI&T — Backend com Java & AWS (DIO)",
+    "Formação JavaScript Developer (39h)",
+    "Formação React Developer (34h)"
+  ]
+}

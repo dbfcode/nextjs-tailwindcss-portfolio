@@ -1,0 +1,36 @@
+{
+  "title": "Diego Ferreira | Especialista Java · Spring Boot · Backend · APIs REST",
+  "description": "Engenheiro de Software e Desenvolvedor Backend Java/Spring Boot em Recife — APIs REST, microsserviços, PostgreSQL, Cloud, Docker, AWS, CI/CD, TDD, mobile full stack, IA aplicada e iGaming. Full stack com foco em backend e sistemas escaláveis.",
+  "author": "Diego Ferreira",
+  "url": "https://nextjs-tailwindcss-portfoliophi.vercel.app",
+  "keywords": [
+    "Especialista Java",
+    "Java Spring Boot Developer",
+    "Desenvolvedor Backend Java",
+    "Spring Boot",
+    "Backend Developer",
+    "API REST",
+    "Microsserviços",
+    "Microservices",
+    "Full Stack Engineer",
+    "Mobile Full Stack",
+    "Engenheiro de Software",
+    "NestJS",
+    "Node.js",
+    "PostgreSQL",
+    "Docker",
+    "AWS",
+    "CI/CD",
+    "TDD",
+    "iGaming",
+    "IA aplicada",
+    "Recife",
+    "Brasil"
+  ],
+  "nav": [
+    { "href": "/", "label": "Início" },
+    { "href": "/about", "label": "Sobre" },
+    { "href": "/projects", "label": "Projetos" },
+    { "href": "/contact", "label": "Contato" }
+  ]
+}

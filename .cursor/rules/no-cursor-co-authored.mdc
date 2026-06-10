@@ -1,0 +1,27 @@
+---
+description: Proíbe trailers Co-authored-by e metadados Cursor em commits deste repositório
+alwaysApply: true
+---
+
+# Commits — sem Co-authored-by nem trailers Cursor
+
+**Regra obrigatória e inegociável para este repositório.**
+
+Ao criar commits (localmente ou via agente):
+
+1. **Nunca** adicionar `Co-authored-by:` em mensagens de commit — nem para Cursor, nem para o usuário, nem para qualquer bot/agente.
+2. **Nunca** adicionar trailers ou metadados de agente, incluindo mas não limitado a:
+   - `Co-authored-by: Cursor <...>`
+   - `Co-authored-by: ... <cursor@...>`
+   - `Made-with: Cursor`
+   - Qualquer linha de trailer gerada automaticamente por IDE/agente.
+3. A mensagem de commit deve conter **apenas** o título e o corpo redigidos para o projeto — sem linhas extras no rodapé.
+4. Se uma ferramenta sugerir ou injetar um trailer, **removê-lo** antes de commitar.
+5. Em rebase, amend ou squash, **não reintroduzir** trailers removidos anteriormente.
+
+Esta regra aplica-se a todos os agentes, subagentes e fluxos automatizados neste repo.
+
+## Enforcement no repositório
+
+- O hook `.githooks/commit-msg` remove automaticamente linhas `Co-authored-by:` e `Made-with: Cursor`.
+- `npm install` ativa os hooks via script `prepare` em `package.json`.
