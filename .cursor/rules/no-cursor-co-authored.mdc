@@ -20,3 +20,8 @@ Ao criar commits (localmente ou via agente):
 5. Em rebase, amend ou squash, **não reintroduzir** trailers removidos anteriormente.
 
 Esta regra aplica-se a todos os agentes, subagentes e fluxos automatizados neste repo.
+
+## Enforcement no repositório
+
+- O hook `.githooks/commit-msg` remove automaticamente linhas `Co-authored-by:` e `Made-with: Cursor`.
+- `npm install` ativa os hooks via script `prepare` em `package.json`.
