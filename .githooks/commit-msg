@@ -1,0 +1,4 @@
+#!/bin/sh
+# Remove trailers Co-authored-by e metadados de agente das mensagens de commit.
+sed -i '/^Co-authored-by:/d' "$1"
+sed -i '/^Made-with: Cursor/d' "$1"
